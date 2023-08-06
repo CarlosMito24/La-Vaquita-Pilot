@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Registrar">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Introduce tu nombre"/>
+
+            <Entry FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   x:Name="NombreCliente"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Introduce tu número de tarjeta"/>
+
+            <Entry FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   x:Name="NumeroTarjeta"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Indica la fecha de caducidad de tu tarjeta"/>
+
+            <Entry FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   x:Name="FechaCadTarjeta"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Introduce el pin de tu tajerta"/>
+
+            <Entry FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   x:Name="PinTarjeta"/>
+
+            <Button Text="Efectuar compra" 
+                    FontFamily="Georgia" 
+                    Margin="10, 10, 10, 10" 
+                    CornerRadius="20"
+                    BackgroundColor="BlueViolet"
+                    Clicked="EfectuarCompraClicked"
+                    TextColor="AliceBlue"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text=""
+                   x:Name="LabelNombre"
+                   IsVisible="false"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text=""
+                   x:Name="LabelNumeroOrden"
+                   IsVisible="false"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text=""
+                   x:Name="LabelFecha"
+                   IsVisible="false"/>
+
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text=""
+                   x:Name="LabelTotal"
+                   IsVisible="false"/>
+
+            <Button Text="Regresar" 
+                    FontFamily="Georgia" 
+                    Margin="10, 10, 10, 10" 
+                    CornerRadius="20"
+                    BackgroundColor="BlueViolet"
+                    TextColor="AliceBlue"
+                    Clicked="RegresarClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

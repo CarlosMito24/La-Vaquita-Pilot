@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Quesos">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="20, 20, 20, 20">
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Estos son todos los productos que ofreceos"/>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   FontSize="Medium"
+                   Text="Tipos De Quesos"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesoduroblando.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Duro Blando - Costo Libra: $ 3,80"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesoduroviejo.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Duro Viejo - Costo Libra: $ 6,00"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesorayado.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Rayado - Costo Libra: $ 3,80"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesillo1.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Quesillo - Costo Libra: $ 2,60"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesomozzarella.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Mozzarella - Costo Libra: $ 2,95"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesocapita.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Capita - Costo Libra: $ 4,00"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesokraft.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Kraft - Costo Libra: $ 2,50"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesoparmesano.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Parmesano - Costo Libra: $ 5,50"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesofresco.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Fresco - Costo Libra: $ 2,75"/>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   FontSize="Medium"
+                   Text="Tipos De Queso Crema"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesocrema.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Crema - Costo: $ 1,62"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesocremaloroco.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Crema Con Loroco - Costo: $ 1,62"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesocrematocino.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Crema Con Tocino - Costo: $ 1,62"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="quesocremachilechipotle.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Queso Crema Con Chile Chipotle - Costo: $ 1,62"/>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   FontSize="Medium"
+                   Text="Crema"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="cremacentavos.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Crema de 95 G - 1/8 De Botella De Crema - Costo: $ 0.30"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="cuartodecrema.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text=" Crema de 190 G - 1/4 De Botella De Crema - Costo: $ 1,00"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="botelladecrema.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Botella De Crema - Costo: $ 3,00"/>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   FontSize="Medium"
+                   Text="Leche"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="leche473ml.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Leche Entera De 473 ML - Costo: $ 0.90"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="leche750ml.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Leche Entera De 750 ML - Costo: $ 1.33"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="leche900ml.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Leche Entera De 900 ML - Costo: $ 1.55"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="mediogalondeleche.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Leche Entera Medio Galón - Costo: $ 3.25"/>
+
+            <Border HeightRequest="300"
+                    WidthRequest="300"
+                    StrokeShape="RoundRectangle 30, 30, 30, 30"
+                    Margin="10, 10, 10, 10">
+                <Image Source="galondeleche.png"/>
+            </Border>
+
+            <Label FontFamily="Georgia" 
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text="Leche Entera 1 Galón - Costo: $ 6.10"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
