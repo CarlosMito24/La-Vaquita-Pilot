@@ -59,6 +59,11 @@ public partial class Compras : ContentPage
         QuesoDuroViejo.IsVisible = true;
         QuesoRayado.IsVisible = true;
         Quesillo.IsVisible = true;
+        QuesoMozzarella.IsVisible = true;
+        QuesoCapita.IsVisible = true;
+        QuesoKraft.IsVisible = true;
+        QuesoParmesano.IsVisible = true;
+        QuesoFresco.IsVisible = true;
 
     }
 

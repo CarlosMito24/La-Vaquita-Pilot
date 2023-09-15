@@ -189,6 +189,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoKraft"
                         Clicked="QuesoKraftClicked"
                         IsVisible="false"/>
 
@@ -200,6 +201,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoParmesano"
                         Clicked="QuesoParmesanoClicked"
                         IsVisible="false"/> 
 
@@ -211,6 +213,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoFresco"
                         Clicked="QuesoFrescoClicked"
                         IsVisible="false"/>
 
@@ -276,7 +279,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
-                        x:Name="QuesoCremaChile"
+                        x:Name="QuesoCremaConChileChipotle"
                         Clicked="QuesoCremaConChileChipotleClicked"
                         IsVisible="false"/>
 
@@ -300,7 +303,7 @@
 
                 <Button Text="Crema 95 G" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="21"
                         CornerRadius="20"
@@ -312,18 +315,19 @@
 
                 <Button Text="Crema 190 G" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="22"
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
-                        Clicked="Crema95GClicked"
+                        x:Name="Crema190G"
+                        Clicked="Crema190GClicked"
                         IsVisible="false"/>
 
                 <Button Text="Botella de Crema" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="23"
                         CornerRadius="20"
@@ -353,7 +357,7 @@
 
                 <Button Text="Leche Entera 473 ML" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="25"
                         CornerRadius="20"
@@ -365,7 +369,7 @@
 
                 <Button Text="Leche Entera 750 ML" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="26"
                         CornerRadius="20"
@@ -377,7 +381,7 @@
 
                 <Button Text="Leche Entera 900 ML" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="27"
                         CornerRadius="20"
@@ -389,7 +393,7 @@
 
                 <Button Text="Leche Entera Medio Galón" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="28"
                         CornerRadius="20"
@@ -401,7 +405,7 @@
 
                 <Button Text="Leche Entera Galón" 
                         FontFamily="Georgia" 
-                        Margin="1, 1, 1, 1" 
+                        Margin="10, 1, 10, 1" 
                         Grid.ColumnSpan="2" 
                         Grid.Row="29"
                         CornerRadius="20"
