@@ -53,6 +53,30 @@ public partial class Compras : ContentPage
     double orden20;
     double orden21;
 
+    private void PrimeraFlechaClicked (object sender, EventArgs e)
+    {
+        QuesoDuroBlando.IsVisible = true;
+        QuesoDuroViejo.IsVisible = true;
+        QuesoRayado.IsVisible = true;
+        Quesillo.IsVisible = true;
+
+    }
+
+    private void SegundaFlechaClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void TerceraFlechaClicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void CuartaFlechaClicked(object sender, EventArgs e)
+    {
+
+    }
+
     private void QuesoDuroBlandoClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
