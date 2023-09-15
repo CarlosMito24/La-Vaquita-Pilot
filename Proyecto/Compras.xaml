@@ -240,6 +240,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoCrema"
                         Clicked="QuesoCremaClicked"
                         IsVisible="false"/>
 
@@ -251,6 +252,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoCremaLoroco"
                         Clicked="QuesoCremaConLorocoClicked"
                         IsVisible="false"/>
 
@@ -262,6 +264,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoCremaTocino"
                         Clicked="QuesoCremaConTocinoClicked"
                         IsVisible="false"/>
 
@@ -273,6 +276,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="QuesoCremaChile"
                         Clicked="QuesoCremaConChileChipotleClicked"
                         IsVisible="false"/>
 
@@ -302,6 +306,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="Crema95G"
                         Clicked="Crema95GClicked"
                         IsVisible="false"/>
 
@@ -324,6 +329,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="BotellaDeCrema"
                         Clicked="BotellaDeCremaClicked"
                         IsVisible="false"/>
 
@@ -353,6 +359,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="LecheEntera473ML"
                         Clicked="Leche473Clicked"
                         IsVisible="false"/>
 
@@ -364,6 +371,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="LecheEntera750ML"
                         Clicked="Leche750Clicked"
                         IsVisible="false"/>
 
@@ -375,6 +383,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="LecheEntera900ML"
                         Clicked="Leche900Clicked"
                         IsVisible="false"/>
 
@@ -386,6 +395,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="LecheEnteraMedioGalon"
                         Clicked="MedioGalonClicked"
                         IsVisible="false"/>
 
@@ -397,6 +407,7 @@
                         CornerRadius="20"
                         BackgroundColor="#448EE4"
                         TextColor="AliceBlue"
+                        x:Name="LecheEnteraGalon"
                         Clicked="GalonClicked"
                         IsVisible="false"/>
 
@@ -416,6 +427,7 @@
                         CornerRadius="20"
                         BackgroundColor="ForestGreen"
                         TextColor="AliceBlue"
+                        x:Name="RegistrarCompra"
                         Clicked="RegistrarCompraClicked"/>
             </Grid>
         </VerticalStackLayout>
