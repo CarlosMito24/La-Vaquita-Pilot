@@ -59,6 +59,7 @@
                        VerticalTextAlignment="Center" 
                        Margin="10, 10, 10, 10"
                        x:Name="Cantidad"
+                       Keyboard="Numeric"
                        Grid.Row="1"
                        Grid.ColumnSpan="2"/>
 

@@ -9,6 +9,10 @@ public partial class Compras : ContentPage
 		InitializeComponent();
 	}
 
+    private bool IsImage1 = true;
+    private bool IsImage2 = true;
+    private bool IsImage3 = true;
+    private bool IsImage4 = true;
     double quesoduroblando = 3.80;
     double quesoduroviejo = 6.00;
     double quesorayado = 3.80;
@@ -55,31 +59,79 @@ public partial class Compras : ContentPage
 
     private void PrimeraFlechaClicked (object sender, EventArgs e)
     {
-        QuesoDuroBlando.IsVisible = true;
-        QuesoDuroViejo.IsVisible = true;
-        QuesoRayado.IsVisible = true;
-        Quesillo.IsVisible = true;
-        QuesoMozzarella.IsVisible = true;
-        QuesoCapita.IsVisible = true;
-        QuesoKraft.IsVisible = true;
-        QuesoParmesano.IsVisible = true;
-        QuesoFresco.IsVisible = true;
+        if (IsImage1)
+        {
+            PrimeraFlecha.Source = "flechaarriba.png";
+        }
+        else
+        {
+            PrimeraFlecha.Source = "flechaabajo.png";
+        }
+        IsImage1 = !IsImage1;
 
+        QuesoDuroBlando.IsVisible = !QuesoDuroBlando.IsVisible;
+        QuesoDuroViejo.IsVisible = !QuesoDuroViejo.IsVisible;
+        QuesoRayado.IsVisible = !QuesoRayado.IsVisible;
+        Quesillo.IsVisible = !Quesillo.IsVisible;
+        QuesoMozzarella.IsVisible = !QuesoMozzarella.IsVisible;
+        QuesoCapita.IsVisible = !QuesoCapita.IsVisible;
+        QuesoKraft.IsVisible = QuesoKraft.IsVisible;
+        QuesoParmesano.IsVisible = !QuesoParmesano.IsVisible;
+        QuesoFresco.IsVisible = !QuesoFresco.IsVisible;
     }
 
     private void SegundaFlechaClicked(object sender, EventArgs e)
     {
+        if (IsImage2)
+        {
+            SegundaFlecha.Source = "flechaarriba.png";
+        }
+        else
+        {
+            SegundaFlecha.Source = "flechaabajo.png";
+        }
+        IsImage2 = !IsImage2;
 
+        QuesoCrema.IsVisible = !QuesoCrema.IsVisible;
+        QuesoCremaLoroco.IsVisible = !QuesoCremaLoroco.IsVisible;
+        QuesoCremaTocino.IsVisible = !QuesoCremaTocino.IsVisible;
+        QuesoCremaConChileChipotle.IsVisible = !QuesoCremaConChileChipotle.IsVisible;
     }
 
     private void TerceraFlechaClicked(object sender, EventArgs e)
     {
+        if (IsImage3)
+        {
+            TerceraFlecha.Source = "flechaarriba.png";
+        }
+        else
+        {
+            TerceraFlecha.Source = "flechaabajo.png";
+        }
+        IsImage3 = !IsImage3;
 
+        Crema95G.IsVisible = !Crema95G.IsVisible;
+        Crema190G.IsVisible = !Crema190G.IsVisible;
+        BotellaDeCrema.IsVisible = !BotellaDeCrema.IsVisible;
     }
 
     private void CuartaFlechaClicked(object sender, EventArgs e)
     {
+        if (IsImage4)
+        {
+            CuartaFlecha.Source = "flechaarriba.png";
+        }
+        else
+        {
+            CuartaFlecha.Source = "flechaabajo.png";
+        }
+        IsImage4= !IsImage4;
 
+        LecheEntera473ML.IsVisible = !LecheEntera473ML.IsVisible;
+        LecheEntera750ML.IsVisible = !LecheEntera750ML.IsVisible;
+        LecheEntera900ML.IsVisible = !LecheEntera900ML.IsVisible;
+        LecheEnteraMedioGalon.IsVisible = !LecheEnteraMedioGalon.IsVisible;
+        LecheEnteraGalon.IsVisible = !LecheEnteraGalon.IsVisible;
     }
 
     private void QuesoDuroBlandoClicked(object sender, EventArgs e)
@@ -87,6 +139,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden1 = cantidad * quesoduroblando;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Duro Blando", "Ok");
         }
         else
         {
@@ -99,6 +164,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden2 = cantidad * quesoduroviejo;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Duro Viejo", "Ok");
         }
         else
         {
@@ -111,6 +189,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden3 = cantidad * quesorayado;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Rayado", "Ok");
         }
         else
         {
@@ -123,6 +214,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden4 = cantidad * quesillo;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Quesillo", "Ok");
         }
         else
         {
@@ -135,6 +239,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden5 = cantidad * quesomozzarella;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Mozzarella", "Ok");
         }
         else
         {
@@ -147,6 +264,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden6 = cantidad * quesocapita;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Capita", "Ok");
         }
         else
         {
@@ -159,6 +289,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden7 = cantidad * quesokraft;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Kraft", "Ok");
         }
         else
         {
@@ -171,6 +314,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden8 = cantidad * quesoparmesano;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Parmesano", "Ok");
         }
         else
         {
@@ -183,6 +339,19 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden9 = cantidad * quesofresco;
+
+            QuesoDuroBlando.IsVisible = false;
+            QuesoDuroViejo.IsVisible = false;
+            QuesoRayado.IsVisible = false;
+            Quesillo.IsVisible = false;
+            QuesoMozzarella.IsVisible = false;
+            QuesoCapita.IsVisible = false;
+            QuesoKraft.IsVisible = false;
+            QuesoParmesano.IsVisible = false;
+            QuesoFresco.IsVisible = false;
+            PrimeraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Fresco", "Ok");
         }
         else
         {
@@ -195,6 +364,14 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden10 = cantidad * quesocrema;
+
+            QuesoCrema.IsVisible = false;
+            QuesoCremaLoroco.IsVisible = false;
+            QuesoCremaTocino.IsVisible = false;
+            QuesoCremaConChileChipotle.IsVisible = false;
+            SegundaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema", "Ok");
         }
         else
         {
@@ -207,6 +384,15 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden11 = cantidad * quesocremaconloroco;
+
+            QuesoCrema.IsVisible = false;
+            QuesoCremaLoroco.IsVisible = false;
+            QuesoCremaTocino.IsVisible = false;
+            QuesoCremaConChileChipotle.IsVisible = false;
+
+            SegundaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Loroco", "Ok");
         }
         else
         {
@@ -219,6 +405,14 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden12 = cantidad * quesocremacontocino;
+
+            QuesoCrema.IsVisible = false;
+            QuesoCremaLoroco.IsVisible = false;
+            QuesoCremaTocino.IsVisible = false;
+            QuesoCremaConChileChipotle.IsVisible = false;
+            SegundaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Tocino", "Ok");
         }
         else
         {
@@ -231,6 +425,14 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden13 = cantidad * quesocremachilechipotle;
+
+            QuesoCrema.IsVisible = false;
+            QuesoCremaLoroco.IsVisible = false;
+            QuesoCremaTocino.IsVisible = false;
+            QuesoCremaConChileChipotle.IsVisible = false;
+            SegundaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Chile Chipotle", "Ok");
         }
         else
         {
@@ -243,6 +445,13 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden14 = cantidad * crema95g;
+
+            Crema95G.IsVisible = false;
+            Crema190G.IsVisible = false;
+            BotellaDeCrema.IsVisible = false;
+            TerceraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado","Se Agregó " + cantidad + " Unidades de Crema de 95G", "Ok");
         }
         else
         {
@@ -255,6 +464,13 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden15 = cantidad * crema190g;
+
+            Crema95G.IsVisible = false;
+            Crema190G.IsVisible = false;
+            BotellaDeCrema.IsVisible = false;
+            TerceraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 190G", "Ok");
         }
         else
         {
@@ -267,6 +483,13 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden16 = cantidad * botelladecrema;
+
+            Crema95G.IsVisible = false;
+            Crema190G.IsVisible = false;
+            BotellaDeCrema.IsVisible = false;
+            TerceraFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Botellla de crema", "Ok");
         }
         else
         {
@@ -279,6 +502,15 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden17 = cantidad * leche473ml;
+
+            LecheEntera473ML.IsVisible = false;
+            LecheEntera750ML.IsVisible = false;
+            LecheEntera900ML.IsVisible = false;
+            LecheEnteraMedioGalon.IsVisible = false;
+            LecheEnteraGalon.IsVisible = false;
+            CuartaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 473ML", "Ok");
         }
         else
         {
@@ -291,6 +523,15 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden18 = cantidad * leche750ml;
+
+            LecheEntera473ML.IsVisible = false;
+            LecheEntera750ML.IsVisible = false;
+            LecheEntera900ML.IsVisible = false;
+            LecheEnteraMedioGalon.IsVisible = false;
+            LecheEnteraGalon.IsVisible = false;
+            CuartaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 750ML", "Ok");
         }
         else
         {
@@ -303,6 +544,15 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden19 = cantidad * leche900ml;
+
+            LecheEntera473ML.IsVisible = false;
+            LecheEntera750ML.IsVisible = false;
+            LecheEntera900ML.IsVisible = false;
+            LecheEnteraMedioGalon.IsVisible = false;
+            LecheEnteraGalon.IsVisible = false;
+            CuartaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 900ML", "Ok");
         }
         else
         {
@@ -315,6 +565,15 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden20 = cantidad * lechemediogalon;
+
+            LecheEntera473ML.IsVisible = false;
+            LecheEntera750ML.IsVisible = false;
+            LecheEntera900ML.IsVisible = false;
+            LecheEnteraMedioGalon.IsVisible = false;
+            LecheEnteraGalon.IsVisible = false;
+            CuartaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Medio Galón", "Ok");
         }
         else
         {
@@ -327,6 +586,15 @@ public partial class Compras : ContentPage
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
             orden21 = cantidad * lechegalon;
+
+            LecheEntera473ML.IsVisible = false;
+            LecheEntera750ML.IsVisible = false;
+            LecheEntera900ML.IsVisible = false;
+            LecheEnteraMedioGalon.IsVisible = false;
+            LecheEnteraGalon.IsVisible = false;
+            CuartaFlecha.Source = "flechaabajo.png";
+
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Galón", "Ok");
         }
         else
         {

@@ -21,13 +21,14 @@
                    HorizontalTextAlignment="Center" 
                    VerticalTextAlignment="Center" 
                    Margin="10, 10, 10, 10"
-                   Text="Introduce tu número de tarjeta"/>
+                   Text="Introduce tu número de teléfono"/>
 
             <Entry FontFamily="Georgia"
                    HorizontalTextAlignment="Center" 
                    VerticalTextAlignment="Center" 
                    Margin="10, 10, 10, 10"
-                   x:Name="NumeroTarjeta"/>
+                   x:Name="NumeroTarjeta"
+                   Keyboard="Numeric"/>
 
             <Label FontFamily="Georgia"
                    HorizontalTextAlignment="Center" 
@@ -39,7 +40,8 @@
                    HorizontalTextAlignment="Center" 
                    VerticalTextAlignment="Center" 
                    Margin="10, 10, 10, 10"
-                   x:Name="FechaCadTarjeta"/>
+                   x:Name="FechaCadTarjeta"
+                   Keyboard="Numeric"/>
 
             <Label FontFamily="Georgia"
                    HorizontalTextAlignment="Center" 
@@ -51,7 +53,8 @@
                    HorizontalTextAlignment="Center" 
                    VerticalTextAlignment="Center" 
                    Margin="10, 10, 10, 10"
-                   x:Name="PinTarjeta"/>
+                   x:Name="PinTarjeta"
+                   Keyboard="Numeric"/>
 
             <Button Text="Efectuar compra" 
                     FontFamily="Georgia" 
