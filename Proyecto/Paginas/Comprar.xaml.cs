@@ -1,10 +1,10 @@
 using Microsoft.Maui.Controls;
 
-namespace Proyecto;
+namespace Proyecto.Paginas;
 
-public partial class Compras : ContentPage
+public partial class Comprar : ContentPage
 {
-	public Compras()
+	public Comprar()
 	{
 		InitializeComponent();
 	}
@@ -57,7 +57,7 @@ public partial class Compras : ContentPage
     double orden20;
     double orden21;
 
-    private void PrimeraFlechaClicked (object sender, EventArgs e)
+    private void PrimeraFlechaClicked(object sender, EventArgs e)
     {
         if (IsImage1)
         {
@@ -125,7 +125,7 @@ public partial class Compras : ContentPage
         {
             CuartaFlecha.Source = "flechaabajo.png";
         }
-        IsImage4= !IsImage4;
+        IsImage4 = !IsImage4;
 
         LecheEntera473ML.IsVisible = !LecheEntera473ML.IsVisible;
         LecheEntera750ML.IsVisible = !LecheEntera750ML.IsVisible;
@@ -451,7 +451,7 @@ public partial class Compras : ContentPage
             BotellaDeCrema.IsVisible = false;
             TerceraFlecha.Source = "flechaabajo.png";
 
-            DisplayAlert("Producto Agregado","Se Agregó " + cantidad + " Unidades de Crema de 95G", "Ok");
+            DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 95G", "Ok");
         }
         else
         {

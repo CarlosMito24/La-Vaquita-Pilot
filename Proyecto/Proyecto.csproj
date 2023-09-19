@@ -58,14 +58,20 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Compras.xaml">
-		<Generator>MSBuild:Compile</Generator>
+	  <MauiXaml Update="Paginas\Comprar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Quesos.xaml">
-		<Generator>MSBuild:Compile</Generator>
+	  <MauiXaml Update="Paginas\Cotizar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Registrar.xaml">
-		<Generator>MSBuild:Compile</Generator>
+	  <MauiXaml Update="Paginas\Info.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\Productos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\Registrar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
 </Project>

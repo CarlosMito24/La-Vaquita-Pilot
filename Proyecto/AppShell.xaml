@@ -4,6 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Proyecto"
+    xmlns:Paginas="clr-namespace:Proyecto.Paginas"
      FlyoutHeaderBehavior="CollapseOnScroll">
 
     <Shell.FlyoutHeaderTemplate>
@@ -15,8 +16,8 @@
     </Shell.FlyoutHeaderTemplate>
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
-        <ShellContent Title="Página Principal" ContentTemplate="{DataTemplate local:MainPage}"></ShellContent>
-        <ShellContent Title="Productos" ContentTemplate="{DataTemplate local:Quesos}"></ShellContent>
-        <ShellContent Title="Registrar Compra" ContentTemplate="{DataTemplate local:Compras}"></ShellContent>
+        <ShellContent Title="Productos" ContentTemplate="{DataTemplate Paginas:Productos}"></ShellContent>
+        <ShellContent Title="Comprar" ContentTemplate="{DataTemplate Paginas:Comprar}"></ShellContent>
+        <ShellContent Title="Información" ContentTemplate="{DataTemplate Paginas:Info}"></ShellContent>
     </FlyoutItem>
 </Shell>

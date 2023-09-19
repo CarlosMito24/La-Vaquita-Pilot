@@ -2,12 +2,12 @@ using Microsoft.VisualBasic;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Proyecto;
+namespace Proyecto.Paginas;
 
 public partial class Registrar : ContentPage
 {
-    public Compras comprar;
-    public Registrar(Compras comprar, double total)
+    public Comprar comprar;
+    public Registrar(Comprar comprar, double total)
 	{
 		InitializeComponent();
         this.comprar = comprar;
