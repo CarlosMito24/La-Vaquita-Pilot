@@ -36,10 +36,11 @@ public partial class Registrar : ContentPage
 
     private void EfectuarCompraClicked(object sender, EventArgs e)
     {
-        if (!string.IsNullOrEmpty(NombreCliente.Text) && !string.IsNullOrEmpty(NumeroTarjeta.Text) && !string.IsNullOrEmpty(FechaCadTarjeta.Text) && !string.IsNullOrEmpty(PinTarjeta.Text))
+        if (!string.IsNullOrEmpty(NombreCliente.Text) && !string.IsNullOrEmpty(ApellidoCliente.Text) && !string.IsNullOrEmpty(NumeroCliente.Text))
         {
             string nombredelcliente = Convert.ToString(NombreCliente.Text);
-            LabelNombre.Text = ("Cliente: " + nombredelcliente);
+            string apellidodelcliente = Convert.ToString(ApellidoCliente.Text);
+            LabelNombre.Text = ("Cliente: " + nombredelcliente + " " + apellidodelcliente);
             LabelNombre.IsVisible = true;
             LabelNumeroOrden.Text = "Su número de orden es: 01";
             LabelNumeroOrden.IsVisible = true;

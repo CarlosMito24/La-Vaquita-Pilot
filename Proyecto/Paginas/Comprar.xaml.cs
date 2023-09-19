@@ -657,4 +657,21 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Introduce los datos solicitados", "Ok");
         }
     }
+
+    private void CotizarCompraClicked(object sender, EventArgs e)
+    {
+        total += orden1 += orden2 += orden3 += orden4 += orden5 += orden6
+              += orden7 += orden8 += orden9 += orden10 += orden11 += orden12
+              += orden13 += orden14 += orden15 += orden16 += orden17 += orden18
+              += orden19 += orden20 += orden21;
+
+        if (total > 0)
+        {
+            Navigation.PushAsync(new Cotizar(this, total));
+        }
+        else
+        {
+            DisplayAlert("Error", "Introduce los datos solicitados", "Ok");
+        }
+    }
 }

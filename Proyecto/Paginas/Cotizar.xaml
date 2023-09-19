@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Proyecto.Paginas.Cotizar"
              Title="Cotizar">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center" 
+                   Margin="10, 10, 10, 10"
+                   Text=""
+                   x:Name="LabelTotal"/>
+
+            <Button Text="Regresar" 
+                    FontFamily="Georgia" 
+                    Margin="10, 10, 10, 10" 
+                    CornerRadius="20"
+                    BackgroundColor="BlueViolet"
+                    TextColor="AliceBlue"
+                    Clicked="RegresarClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
