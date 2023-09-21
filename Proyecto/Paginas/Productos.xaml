@@ -5,13 +5,31 @@
              Title="Productos">
 
     <ScrollView>
-        <VerticalStackLayout Margin="20, 20, 20, 20">
-
+        <VerticalStackLayout>
             <Label FontFamily="Georgia" 
                HorizontalTextAlignment="Center" 
                VerticalTextAlignment="Center" 
                Margin="10, 10, 10, 10"
-               Text="Estos son todos los productos que ofreceos"/>
+               Text="Estos son todos los productos que ofrecemos"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label x:Name="myLabel"
+                   Text="¡¡Desliza hacia los lados para ver los productos!!"
+                   IsVisible="false" 
+                   Grid.Row="0"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   Margin="10, 10, 10, 10"
+                   FontFamily="Georgia"/>
+
+                <Label Text=""
+                   Grid.Row="0"
+                   Margin="10, 10, 10, 10"/>
+            </Grid>
+
 
             <Label FontFamily="Georgia" 
                HorizontalTextAlignment="Center" 
@@ -20,122 +38,42 @@
                FontSize="Medium"
                Text="Tipos De Quesos"/>
 
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesoduroblando.png"/>
-            </Border>
+            <CarouselView x:Name="CarouselView1" IndicatorView="Indicador1">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+                        HeightRequest="300"
+                        WidthRequest="300"
+                        StrokeShape="RoundRectangle 30, 30, 30, 30">
+                            <Grid RowDefinitions="*, *, auto, auto">
+                                <Image Source="{Binding ImagenProducto}" Aspect="AspectFill" Grid.RowSpan="4" />
+                                <RoundRectangle Grid.RowSpan="4"
+                                            CornerRadius="30"
+                                            HeightRequest="300"
+                                            WidthRequest="300"
+                                            Opacity=".6">
+                                    <RoundRectangle.Fill>
+                                        <LinearGradientBrush EndPoint="0, 1">
+                                            <GradientStop Offset="0" Color="Transparent"></GradientStop>
+                                            <GradientStop Offset="1" Color="#030005"></GradientStop>
+                                        </LinearGradientBrush>
+                                    </RoundRectangle.Fill>
+                                </RoundRectangle>
+                                <Label Grid.Row="2" Text="{Binding NombreProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 5"></Label>
+                                <Label Grid.Row="3" Text="{Binding CostoProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 10"></Label>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
 
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Duro Blando - Costo Libra: $ 3,80"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesoduroviejo.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Duro Viejo - Costo Libra: $ 6,00"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesorayado.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Rayado - Costo Libra: $ 3,80"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesillo1.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Quesillo - Costo Libra: $ 2,60"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesomozzarella.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Mozzarella - Costo Libra: $ 2,95"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesocapita.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Capita - Costo Libra: $ 4,00"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesokraft.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Kraft - Costo Libra: $ 2,50"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesoparmesano.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Parmesano - Costo Libra: $ 5,50"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesofresco.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Fresco - Costo Libra: $ 2,75"/>
+            <IndicatorView x:Name="Indicador1"
+                        HorizontalOptions="Center"
+                        IndicatorColor="Gray"
+                        IndicatorSize="10"
+                        SelectedIndicatorColor="ForestGreen"
+                        VerticalOptions="Center"
+                        Margin="0, 10, 0, 10"/>
 
             <Label FontFamily="Georgia" 
                HorizontalTextAlignment="Center" 
@@ -144,175 +82,129 @@
                FontSize="Medium"
                Text="Tipos De Queso Crema"/>
 
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesocrema.png"/>
-            </Border>
+            <CarouselView x:Name="CarouselView2" IndicatorView="Indicador2">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Border HeightRequest="300"
+                            WidthRequest="300"
+                            StrokeShape="RoundRectangle 30, 30, 30, 30">
+                            <Grid RowDefinitions="*, *, auto, auto">
+                                <Image Source="{Binding ImagenProducto}" Aspect="AspectFill" Grid.RowSpan="4" />
+                                <RoundRectangle Grid.RowSpan="4"
+                                            CornerRadius="30"
+                                            HeightRequest="300"
+                                            WidthRequest="300"
+                                            Opacity=".3">
+                                    <RoundRectangle.Fill>
+                                        <LinearGradientBrush EndPoint="0, 1">
+                                            <GradientStop Offset="0" Color="Transparent"></GradientStop>
+                                            <GradientStop Offset="1" Color="#030005"></GradientStop>
+                                        </LinearGradientBrush>
+                                    </RoundRectangle.Fill>
+                                </RoundRectangle>
+                                <Label Grid.Row="2" Text="{Binding NombreProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 5"></Label>
+                                <Label Grid.Row="3" Text="{Binding CostoProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 10"></Label>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+
+            <IndicatorView x:Name="Indicador2"
+                       HorizontalOptions="Center"
+                       IndicatorColor="Gray"
+                       IndicatorSize="10"
+                       SelectedIndicatorColor="ForestGreen"
+                       VerticalOptions="Center"
+                       Margin="0, 10, 0, 10"/>
 
             <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Crema - Costo: $ 1,62"/>
+           HorizontalTextAlignment="Center" 
+           VerticalTextAlignment="Center" 
+           Margin="10, 10, 10, 10"
+           FontSize="Medium"
+           Text="Crema"/>
 
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesocremaloroco.png"/>
-            </Border>
+            <CarouselView x:Name="CarouselView3" IndicatorView="Indicador3">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+             HeightRequest="300"
+             WidthRequest="300"
+             StrokeShape="RoundRectangle 30, 30, 30, 30">
+                            <Grid RowDefinitions="*, *, auto, auto">
+                                <Image Source="{Binding ImagenProducto}" Aspect="AspectFill" Grid.RowSpan="4" />
+                                <RoundRectangle Grid.RowSpan="4"
+                                 CornerRadius="30"
+                                 HeightRequest="300"
+                                 WidthRequest="300"
+                                 Opacity=".6">
+                                    <RoundRectangle.Fill>
+                                        <LinearGradientBrush EndPoint="0, 1">
+                                            <GradientStop Offset="0" Color="Transparent"></GradientStop>
+                                            <GradientStop Offset="1" Color="#030005"></GradientStop>
+                                        </LinearGradientBrush>
+                                    </RoundRectangle.Fill>
+                                </RoundRectangle>
+                                <Label Grid.Row="2" Text="{Binding NombreProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 5"></Label>
+                                <Label Grid.Row="3" Text="{Binding CostoProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 10"></Label>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
 
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Crema Con Loroco - Costo: $ 1,62"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesocrematocino.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Crema Con Tocino - Costo: $ 1,62"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="quesocremachilechipotle.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Queso Crema Con Chile Chipotle - Costo: $ 1,62"/>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               FontSize="Medium"
-               Text="Crema"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="cremacentavos.png"/>
-            </Border>
+            <IndicatorView x:Name="Indicador3"
+             HorizontalOptions="Center"
+             IndicatorColor="Gray"
+             IndicatorSize="10"
+             SelectedIndicatorColor="ForestGreen"
+             VerticalOptions="Center"
+             Margin="0, 10, 0, 10"/>
 
             <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Crema de 95 G - 1/8 De Botella De Crema - Costo: $ 0.30"/>
+           HorizontalTextAlignment="Center" 
+           VerticalTextAlignment="Center" 
+           Margin="10, 10, 10, 10"
+           FontSize="Medium"
+           Text="Leche"/>
 
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="cuartodecrema.png"/>
-            </Border>
+            <CarouselView x:Name="CarouselView4" IndicatorView="Indicador4">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Border
+             HeightRequest="300"
+             WidthRequest="300"
+             StrokeShape="RoundRectangle 30, 30, 30, 30">
+                            <Grid RowDefinitions="*, *, auto, auto">
+                                <Image Source="{Binding ImagenProducto}" Aspect="AspectFill" Grid.RowSpan="4" />
+                                <RoundRectangle Grid.RowSpan="4"
+                                 CornerRadius="30"
+                                 HeightRequest="300"
+                                 WidthRequest="300"
+                                 Opacity=".6">
+                                    <RoundRectangle.Fill>
+                                        <LinearGradientBrush EndPoint="0, 1">
+                                            <GradientStop Offset="0" Color="Transparent"></GradientStop>
+                                            <GradientStop Offset="1" Color="#030005"></GradientStop>
+                                        </LinearGradientBrush>
+                                    </RoundRectangle.Fill>
+                                </RoundRectangle>
+                                <Label Grid.Row="2" Text="{Binding NombreProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 5"></Label>
+                                <Label Grid.Row="3" Text="{Binding CostoProducto}" TextColor="white" VerticalOptions="Center" HorizontalOptions="Center" Margin="0, 0, 0, 10"></Label>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
 
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text=" Crema de 190 G - 1/4 De Botella De Crema - Costo: $ 1,00"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="botelladecrema.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Botella De Crema - Costo: $ 3,00"/>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               FontSize="Medium"
-               Text="Leche"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="leche473ml.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Leche Entera De 473 ML - Costo: $ 0.90"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="leche750ml.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Leche Entera De 750 ML - Costo: $ 1.33"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="leche900ml.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Leche Entera De 900 ML - Costo: $ 1.55"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="mediogalondeleche.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Leche Entera Medio Galón - Costo: $ 3.25"/>
-
-            <Border HeightRequest="300"
-                WidthRequest="300"
-                StrokeShape="RoundRectangle 30, 30, 30, 30"
-                Margin="10, 10, 10, 10">
-                <Image Source="galondeleche.png"/>
-            </Border>
-
-            <Label FontFamily="Georgia" 
-               HorizontalTextAlignment="Center" 
-               VerticalTextAlignment="Center" 
-               Margin="10, 10, 10, 10"
-               Text="Leche Entera 1 Galón - Costo: $ 6.10"/>
+            <IndicatorView x:Name="Indicador4"
+             HorizontalOptions="Center"
+             IndicatorColor="Gray"
+             IndicatorSize="10"
+             SelectedIndicatorColor="ForestGreen"
+             VerticalOptions="Center"
+             Margin="0, 10, 0, 10"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
