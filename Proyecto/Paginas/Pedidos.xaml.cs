@@ -37,5 +37,16 @@ public partial class Pedidos : ContentPage
         });
     }
 
+    private async void CollectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (e.CurrentSelection.FirstOrDefault() is not Variables item)
+            return;
+
+        await Shell.Current.GoToAsync(nameof(Efectuar), true, new Dictionary<string, object>
+        {
+            ["Item"] = item
+        });
+    }
+
 
 }

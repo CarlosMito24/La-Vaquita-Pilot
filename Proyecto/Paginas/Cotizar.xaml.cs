@@ -1,5 +1,3 @@
-using Microsoft.Identity.Client;
-
 namespace Proyecto.Paginas;
 
 public partial class Cotizar : ContentPage

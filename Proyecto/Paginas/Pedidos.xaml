@@ -30,7 +30,8 @@
                             ItemsSource="{Binding Items}"
                             SelectionMode="Single"
                             Grid.Row="2"
-                            Margin="25, 0, 25, 0">
+                            Margin="25, 0, 25, 0"
+                            SelectionChanged="CollectionView_SelectionChanged">
                 
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Variables">

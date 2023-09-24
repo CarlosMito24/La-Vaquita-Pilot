@@ -7,8 +7,6 @@ namespace Proyecto.Paginas;
 
 public partial class Efectuar : ContentPage
 {
-    
-
     public Variables Item
     {
         get => BindingContext as Variables;
@@ -699,5 +697,13 @@ public partial class Efectuar : ContentPage
         orden20 = 0;
         orden21 = 0;
         Nuevo.IsVisible = false;
+    }
+
+    async void OnBorrarClicked(object sender, EventArgs e)
+    {
+        if (Item.ID == 0)
+            return;
+        await basededatos.DeleteItemAsync(Item);
+        await Shell.Current.GoToAsync("..");
     }
 }

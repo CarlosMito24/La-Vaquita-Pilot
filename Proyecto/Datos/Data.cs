@@ -50,5 +50,11 @@ namespace Proyecto.Datos
                 return await BaseDeDatos.InsertAsync(item);
             }
         }
+
+        public async Task<int> DeleteItemAsync(Variables item)
+        {
+            await Init();
+            return await BaseDeDatos.DeleteAsync(item);
+        }
     }
 }

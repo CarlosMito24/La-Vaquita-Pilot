@@ -486,14 +486,24 @@
                         Grid.ColumnSpan="2"/>
 
                 <Button Text="Cancelar" 
-                        Margin="10, 1, 10, 10"
+                        Margin="10, 1, 10, 0"
                         Clicked="OnCancelClicked"
                         BackgroundColor="ForestGreen"
                         FontAttributes="Bold"
                         CornerRadius="20"
                         TextColor="AliceBlue"
                         Grid.Row="42"
-Grid.ColumnSpan="2"/>
+                        Grid.ColumnSpan="2"/>
+
+                <Button Text="Borrar" 
+                        Margin="10, 1, 10, 10"
+                        Clicked="OnBorrarClicked"
+                        BackgroundColor="ForestGreen"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        TextColor="AliceBlue"
+                        Grid.Row="43"
+                        Grid.ColumnSpan="2"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
