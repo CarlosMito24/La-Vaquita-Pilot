@@ -44,7 +44,8 @@
                    FontFamily="Georgia"
                    HorizontalTextAlignment="Center" 
                    VerticalTextAlignment="Center" 
-                   MaxLength="8"/>
+                   MaxLength="8"
+                   Keyboard="Telephone"/>
             
             <Grid >
                 <Grid.ColumnDefinitions>

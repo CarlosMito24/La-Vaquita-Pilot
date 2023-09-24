@@ -58,9 +58,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Paginas\Cotizar.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Efectuar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
