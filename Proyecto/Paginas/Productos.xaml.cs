@@ -50,18 +50,4 @@ public partial class Productos : ContentPage
         CarouselView3.ItemsSource = imagenes3;
         CarouselView4.ItemsSource = imagenes4;
     }
-    protected override void OnAppearing()
-    {
-        base.OnAppearing();
-
-        Device.StartTimer(TimeSpan.FromSeconds(1), () =>
-        {
-            Device.BeginInvokeOnMainThread(() =>
-            {
-                myLabel.IsVisible = !myLabel.IsVisible; // Cambia la visibilidad del Label
-            });
-
-            return true; // Continúa el bucle
-        });
-    }
 }

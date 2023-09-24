@@ -16,9 +16,7 @@
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Label x:Name="myLabel"
-                   Text="¡¡Desliza hacia los lados para ver los productos!!"
-                   IsVisible="false" 
+                <Label Text="¡¡Desliza hacia los lados para ver los productos!!"
                    Grid.Row="0"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"

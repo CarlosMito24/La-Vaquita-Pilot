@@ -8,43 +8,90 @@
              Title="Pedidos">
 
     <ScrollView>
-        <Grid RowDefinitions="Auto, *">
-            <Button Grid.Row="0" Text="Agregar" 
-                Clicked="OnItemAdded"
-                Margin="20"
-                BackgroundColor="#e6b209" 
-                FontAttributes="Bold"
-                CornerRadius="20"
-                TextColor="White"/>
+        <Grid RowDefinitions="Auto, Auto, *">
+            <Button Grid.Row="0" 
+                    Text="Agregar" 
+                    Clicked="OnItemAdded"
+                    Margin="10, 10, 10, 10"
+                    BackgroundColor="ForestGreen" 
+                    TextColor="AliceBlue"
+                    FontAttributes="Bold"
+                    CornerRadius="20"/>
+            
+            <Label Text="Lista de pedidos:"
+                   Grid.Row="1"
+                   Margin="25, 25, 25,25"
+                   VerticalTextAlignment="Center" 
+                   HorizontalTextAlignment="Center"
+                   FontSize="Medium"
+                   FontAttributes="Bold"/>
 
-            <CollectionView
-        VerticalOptions="Fill"
-        ItemsSource="{Binding Items}"
-        SelectionMode="Single"
-         Grid.Row="1">
+            <CollectionView VerticalOptions="Fill"
+                            ItemsSource="{Binding Items}"
+                            SelectionMode="Single"
+                            Grid.Row="2"
+                            Margin="25, 0, 25, 0">
+                
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="models:Variables">
-                        <Grid ColumnDefinitions="*, *, *, *, Auto, Auto, Auto" Padding="20">
+                        <Grid RowDefinitions="*, *, *, *, Auto, Auto, Auto" Padding="20" ColumnDefinitions="Auto, 100, 10, Auto">
+                            <Label Text="Nombre: "
+                                   Grid.Column="0"
+                                   Grid.Row="0"
+                                   FontAttributes="Bold"/>
+
                             <Label Text="{Binding Nombre}" 
                                    VerticalTextAlignment="Center"
-                                    Grid.Column="0"/>
-                            
+                                   Grid.Row="0"
+                                   Grid.Column="2"
+                                   Grid.ColumnSpan="2"/>
+
+                            <Label Text="Apellido: "
+                                   Grid.Column="0"
+                                   Grid.Row="1"
+                                   FontAttributes="Bold"/>
+
                             <Label Text="{Binding Apellido}"
-       VerticalTextAlignment="Center"
-       Grid.Column="1"/>
-                            
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="1"
+                                   Grid.Column="2"
+                                   Grid.ColumnSpan="2"/>
+
+                            <Label Text="Teléfono: "
+                                   Grid.Column="0"
+                                   Grid.Row="2"
+                                   FontAttributes="Bold"/>
+
                             <Label Text="{Binding Teléfono}"
-       VerticalTextAlignment="Center"
-       Grid.Column="2"/>
-                            
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="2"
+                                   Grid.Column="2"
+                                   Grid.ColumnSpan="2"/>
+
+                            <Label Text="Total: "
+                                   Grid.Column="0"
+                                   Grid.Row="3"
+                                   FontAttributes="Bold"/>
+
+                            <Label Text="$"
+                                   Grid.Column="2"
+                                   Grid.Row="3"/>
+
                             <Label Text="{Binding Total}"
-       VerticalTextAlignment="Center"
-       Grid.Column="3"/>
-                            
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="3"
+                                   Grid.Column="3"/>
+
+                            <Label Text="Fecha: "
+                                   Grid.Column="0"
+                                   Grid.Row="4"
+                                   FontAttributes="Bold"/>
+
                             <Label Text="{Binding Fecha}"
-       VerticalTextAlignment="Center"
-       Grid.Column="4"/>
-                            
+                                   VerticalTextAlignment="Center"
+                                   Grid.Row="4"
+                                   Grid.Column="2"
+                                   Grid.ColumnSpan="2"/>
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

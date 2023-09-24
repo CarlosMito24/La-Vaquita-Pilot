@@ -7,7 +7,7 @@ namespace Proyecto.Paginas;
 
 public partial class Efectuar : ContentPage
 {
-    Variables item;
+    
 
     public Variables Item
     {
