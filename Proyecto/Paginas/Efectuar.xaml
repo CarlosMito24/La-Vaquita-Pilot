@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Proyecto.Paginas.Efectuar"
+             Title="{Binding Nombre}"
+             xmlns:models="clr-namespace:Proyecto.Models"
+             x:DataType="models:Variables">
+
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="StartAndExpand">
+
+            <Label Text="Nombre:"
+                   FontFamily="Georgia"
+                   HorizontalTextAlignment="Center" 
+                   VerticalTextAlignment="Center"  
+                   Margin="10, 10, 10, 10"/>
+
+            <Entry Text="{Binding Nombre}"
+                   Margin="10, 10, 10, 10"
+                   FontFamily="Georgia"
+HorizontalTextAlignment="Center" 
+VerticalTextAlignment="Center"  />
+
+            <Label Text="Apellido:"   
+                   Margin="10, 10, 10, 10"
+                   FontFamily="Georgia"
+HorizontalTextAlignment="Center" 
+VerticalTextAlignment="Center"  />
+
+            <Entry Text="{Binding Apellido}"
+                   Margin="10, 10, 10, 10"
+                   FontFamily="Georgia"
+HorizontalTextAlignment="Center" 
+VerticalTextAlignment="Center"  />
+
+            <Label Text="Teléfono:"   
+                   Margin="10, 10, 10, 10"
+                   FontFamily="Georgia"
+HorizontalTextAlignment="Center" 
+VerticalTextAlignment="Center"  />
+
+            <Entry Text="{Binding Teléfono}"
+                   Margin="10, 10, 10, 10"
+                   FontFamily="Georgia"
+HorizontalTextAlignment="Center" 
+VerticalTextAlignment="Center"  />
+            
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" x:Name="Grow0"/>
+                    <RowDefinition Height="auto" x:Name="Grow1"/>
+                    <RowDefinition Height="auto" x:Name="Grow2"/>
+                    <RowDefinition Height="auto" x:Name="Grow3"/>
+                    <RowDefinition Height="auto" x:Name="Grow4"/>
+                    <RowDefinition Height="auto" x:Name="Grow5"/>
+                    <RowDefinition Height="auto" x:Name="Grow6"/>
+                    <RowDefinition Height="auto" x:Name="Grow7"/>
+                    <RowDefinition Height="auto" x:Name="Grow8"/>
+                    <RowDefinition Height="auto" x:Name="Grow9"/>
+                    <RowDefinition Height="auto" x:Name="Grow10"/>
+                    <RowDefinition Height="auto" x:Name="Grow11"/>
+                    <RowDefinition Height="auto" x:Name="Grow12"/>
+                    <RowDefinition Height="auto" x:Name="Grow13"/>
+                    <RowDefinition Height="auto" x:Name="Grow14"/>
+                    <RowDefinition Height="auto" x:Name="Grow15"/>
+                    <RowDefinition Height="auto" x:Name="Grow16"/>
+                    <RowDefinition Height="auto" x:Name="Grow17"/>
+                    <RowDefinition Height="auto" x:Name="Grow18"/>
+                    <RowDefinition Height="auto" x:Name="Grow19"/>
+                    <RowDefinition Height="auto" x:Name="Grow20"/>
+                    <RowDefinition Height="auto" x:Name="Grow21"/>
+                    <RowDefinition Height="auto" x:Name="Grow22"/>
+                    <RowDefinition Height="auto" x:Name="Grow23"/>
+                    <RowDefinition Height="auto" x:Name="Grow24"/>
+                    <RowDefinition Height="auto" x:Name="Grow25"/>
+                    <RowDefinition Height="auto" x:Name="Grow26"/>
+                    <RowDefinition Height="auto" x:Name="Grow27"/>
+                    <RowDefinition Height="auto" x:Name="Grow28"/>
+                    <RowDefinition Height="auto" x:Name="Grow29"/>
+                    <RowDefinition Height="auto" x:Name="Grow30"/>
+                    <RowDefinition Height="auto" x:Name="Grow31"/>
+                    <RowDefinition Height="auto" x:Name="Grow32"/>
+                    <RowDefinition Height="auto" x:Name="Grow33"/>
+                    <RowDefinition Height="auto" x:Name="Grow34"/>
+                    <RowDefinition Height="auto" x:Name="Grow35"/>
+                    <RowDefinition Height="auto" x:Name="Grow36"/>
+                    <RowDefinition Height="auto" x:Name="Grow37"/>
+                    <RowDefinition Height="auto" x:Name="Grow38"/>
+                    <RowDefinition Height="auto" x:Name="Grow39"/>
+                    <RowDefinition Height="auto" x:Name="Grow40"/>
+                    <RowDefinition Height="auto" x:Name="Grow41"/>
+                    <RowDefinition Height="auto" x:Name="Grow42"/>
+                    <RowDefinition Height="auto" x:Name="Grow43"/>
+                </Grid.RowDefinitions>
+
+                <Label FontFamily="Georgia"
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Margin="10, 10, 10, 10"
+                        Grid.Row="6"
+                        Grid.ColumnSpan="2"
+                        Text="Indica la cantidad que deseas"/>
+
+                <Entry FontFamily="Georgia"
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Margin="10, 10, 10, 10"
+                        x:Name="Cantidad"
+                        Keyboard="Numeric"
+                        Grid.Row="7"
+                        Grid.ColumnSpan="2"/>   
+
+                <Button Text="Agregar más productos" 
+                         FontFamily="Georgia" 
+                         Margin="10, 10, 10, 10" 
+                         Grid.Column="0" 
+                         Grid.Row="8"
+                         Grid.ColumnSpan="2"
+                         CornerRadius="20"
+                         BackgroundColor="ForestGreen"
+                         TextColor="AliceBlue"
+                         Clicked="AgregarClicked"/>
+
+                <Label FontFamily="Georgia"
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Margin="10, 10, 10, 10"
+                        Grid.Row="9"
+                        Grid.ColumnSpan="2"
+                        IsVisible="False"
+                        x:Name="Nuevo"/>
+
+                <Label FontFamily="Georgia"
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Margin="10, 10, 10, 10"
+                        Grid.Row="10"
+                        Grid.ColumnSpan="2"
+                        Text="Selecciona el producto que deseas"/>
+
+                <Label FontFamily="Georgia"
+                        HorizontalTextAlignment="Center" 
+                        VerticalTextAlignment="Center" 
+                        Margin="10, 10, 10, 10"
+                        Grid.Row="11"
+                        Grid.Column="0"
+                        Text="Selecciona el tipo de queso que deseas"/>
+
+                <ImageButton Source="flechaabajo.png"
+              Grid.Column="1"
+              Grid.Row="11"
+              CornerRadius="20"
+              Margin="10, 10, 10, 10"
+              WidthRequest="40"
+              HeightRequest="40"
+              x:Name="PrimeraFlecha"
+              Clicked="PrimeraFlechaClicked"/>
+
+                <Button Text="Queso Duro Blando" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2"
+         Grid.Row="12"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoDuroBlando" 
+         Clicked="QuesoDuroBlandoClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Duro Viejo" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2"
+         Grid.Row="13"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoDuroViejo"
+         Clicked="QuesoDuroViejoClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Rayado" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="14"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoRayado" 
+         Clicked="QuesoRayadoClicked"
+         IsVisible="false"/>
+
+
+                <Button Text="Quesillo" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2"
+         Grid.Row="15"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="Quesillo"
+         Clicked="QuesilloClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Mozzarella" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2"
+         Grid.Row="16"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoMozzarella"
+         Clicked="QuesoMozzarellaClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Capita" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="17"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoCapita"
+         Clicked="QuesoCapitaClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Kraft" 
+         FontFamily="Georgia"
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="18"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoKraft"
+         Clicked="QuesoKraftClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Parmesano" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="19"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoParmesano"
+         Clicked="QuesoParmesanoClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Fresco" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="20"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoFresco"
+         Clicked="QuesoFrescoClicked"
+         IsVisible="false"/>
+
+                <Label FontFamily="Georgia"
+        HorizontalTextAlignment="Center" 
+        VerticalTextAlignment="Center" 
+        Margin="10, 10, 10, 10"
+        Grid.Row="21"
+        Grid.Column="0"
+        Text="Selecciona el tipo de queso crema que deseas"/>
+
+                <ImageButton Source="flechaabajo.png"
+              Grid.Column="1"
+              Grid.Row="21"
+              CornerRadius="20"
+              Margin="10, 10, 10, 10"
+              WidthRequest="40"
+              HeightRequest="40"
+              x:Name="SegundaFlecha"
+              Clicked="SegundaFlechaClicked"/>
+
+                <Button Text="Queso Crema" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="22"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoCrema"
+         Clicked="QuesoCremaClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Crema Loroco" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="23"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoCremaLoroco"
+         Clicked="QuesoCremaConLorocoClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Crema Tocino" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="24"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoCremaTocino"
+         Clicked="QuesoCremaConTocinoClicked"
+         IsVisible="false"/>
+
+                <Button Text="Queso Crema Chile" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="25"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="QuesoCremaConChileChipotle"
+         Clicked="QuesoCremaConChileChipotleClicked"
+         IsVisible="false"/>
+
+                <Label FontFamily="Georgia"
+        HorizontalTextAlignment="Center" 
+        VerticalTextAlignment="Center" 
+        Margin="10, 10, 10, 10"
+        Grid.Row="26"
+        Grid.Column="0"
+        Text="Selecciona la presentación de crema que deseas"/>
+
+                <ImageButton Source="flechaabajo.png"
+              Grid.Column="1"
+              Grid.Row="26"
+              CornerRadius="20"
+              Margin="10, 10, 10, 10"
+              WidthRequest="40"
+              HeightRequest="40"
+              x:Name="TerceraFlecha"
+              Clicked="TerceraFlechaClicked"/>
+
+                <Button Text="Crema 95 G" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="27"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="Crema95G"
+         Clicked="Crema95GClicked"
+         IsVisible="false"/>
+
+                <Button Text="Crema 190 G" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="28"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="Crema190G"
+         Clicked="Crema190GClicked"
+         IsVisible="false"/>
+
+                <Button Text="Botella de Crema" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="29"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="BotellaDeCrema"
+         Clicked="BotellaDeCremaClicked"
+         IsVisible="false"/>
+
+                <Label FontFamily="Georgia"
+        HorizontalTextAlignment="Center" 
+        VerticalTextAlignment="Center" 
+        Margin="10, 10, 10, 10"
+        Grid.Row="30"
+        Grid.Column="0"
+        Text="Selecciona la presentación de leche que deseas"/>
+
+                <ImageButton Source="flechaabajo.png"
+              Grid.Column="1"
+              Grid.Row="30"
+              CornerRadius="20"
+              Margin="10, 10, 10, 10"
+              WidthRequest="40"
+              HeightRequest="40"
+              x:Name="CuartaFlecha"
+              Clicked="CuartaFlechaClicked"/>
+
+                <Button Text="Leche Entera 473 ML" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="31"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="LecheEntera473ML"
+         Clicked="Leche473Clicked"
+         IsVisible="false"/>
+
+                <Button Text="Leche Entera 750 ML" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="32"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="LecheEntera750ML"
+         Clicked="Leche750Clicked"
+         IsVisible="false"/>
+
+                <Button Text="Leche Entera 900 ML" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="33"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="LecheEntera900ML"
+         Clicked="Leche900Clicked"
+         IsVisible="false"/>
+
+                <Button Text="Leche Entera Medio Galón" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="34"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="LecheEnteraMedioGalon"
+         Clicked="MedioGalonClicked"
+         IsVisible="false"/>
+
+                <Button Text="Leche Entera Galón" 
+         FontFamily="Georgia" 
+         Margin="10, 1, 10, 1" 
+         Grid.ColumnSpan="2" 
+         Grid.Row="35"
+         CornerRadius="20"
+         BackgroundColor="#448EE4"
+         TextColor="AliceBlue"
+         x:Name="LecheEnteraGalon"
+         Clicked="GalonClicked"
+         IsVisible="false"/>
+
+                <Label FontFamily="Georgia"
+        HorizontalTextAlignment="Center" 
+        VerticalTextAlignment="Center" 
+        Margin="10, 10, 10, 10"
+        Grid.Row="36"
+        Grid.ColumnSpan="2"
+        Text="Registra tu compra cuando hayas añadido todos tus productos"/>
+
+                <Button Text="Guardar" Margin="10, 10, 10, 1"
+                        Clicked="OnSaveClicked"
+                        BackgroundColor="#e6b209"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        TextColor="White"
+                        Grid.Row="41"
+                        Grid.ColumnSpan="2"/>
+
+                <Button Text="Cancelar" Margin="10, 1, 10, 1"
+                    Clicked="OnCancelClicked"
+                    BackgroundColor="#e6b209"
+                    FontAttributes="Bold"
+                    CornerRadius="20"
+                    TextColor="White"
+                        Grid.Row="42"
+Grid.ColumnSpan="2"/>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

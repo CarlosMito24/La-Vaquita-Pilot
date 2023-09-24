@@ -4,9 +4,9 @@ namespace Proyecto.Paginas;
 
 public partial class Cotizar : ContentPage
 {
-    public Comprar cotizar;
+    public Efectuar cotizar;
 
-    public Cotizar(Comprar cotizar, double total)
+    public Cotizar(Efectuar cotizar, double total)
 	{
 		InitializeComponent();
         this.cotizar = cotizar;
@@ -20,6 +20,4 @@ public partial class Cotizar : ContentPage
         cotizar.Borrar();
         cotizar.Limpiar();
     }
-
-
 }

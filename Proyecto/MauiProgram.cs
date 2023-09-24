@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using Proyecto.Datos;
+using Proyecto.Paginas;
 
 namespace Proyecto;
 
@@ -18,7 +20,9 @@ public static class MauiProgram
 #if DEBUG
 		builder.Logging.AddDebug();
 #endif
-
-		return builder.Build();
+        builder.Services.AddSingleton<Pedidos>();
+        builder.Services.AddTransient<Efectuar>();
+        builder.Services.AddSingleton<Data>();
+        return builder.Build();
 	}
 }

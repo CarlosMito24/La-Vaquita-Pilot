@@ -1,13 +1,27 @@
-using Microsoft.Maui.Controls;
+using Proyecto.Models;
+using Proyecto.Datos;
 
 namespace Proyecto.Paginas;
 
-public partial class Comprar : ContentPage
+[QueryProperty("Item", "Item")]
+
+public partial class Efectuar : ContentPage
 {
-	public Comprar()
-	{
-		InitializeComponent();
-	}
+    Variables item;
+
+    public Variables Item
+    {
+        get => BindingContext as Variables;
+        set => BindingContext = value;
+    }
+
+    Data basededatos;
+
+    public Efectuar(Data data)
+    {
+        InitializeComponent();
+        basededatos = data;
+    }
 
     private bool IsImage1 = true;
     private bool IsImage2 = true;
@@ -602,6 +616,59 @@ public partial class Comprar : ContentPage
         }
     }
 
+
+    private void AgregarClicked(object sender, EventArgs e)
+    {
+        Limpiar();
+        Nuevo.Text = "Ahora puedes ingresar otra cantidad y seleccionar otro producto";
+        Nuevo.IsVisible = true;
+    }
+
+    async void OnSaveClicked(object sender, EventArgs e)
+    {
+        string fecha;
+        // Obtener la fecha actual
+        DateTime fechaActual = DateTime.Now;
+
+        // Asignar la fecha actual al Label
+        fecha = fechaActual.ToString("dd/MM/yyyy");
+
+        total += orden1 += orden2 += orden3 += orden4 += orden5 += orden6
+              += orden7 += orden8 += orden9 += orden10 += orden11 += orden12
+              += orden13 += orden14 += orden15 += orden16 += orden17 += orden18
+              += orden19 += orden20 += orden21;
+
+        string totalfinal = total.ToString("0.00");
+        Item.Total = totalfinal;
+        Item.Fecha = fecha;
+
+        if (string.IsNullOrWhiteSpace(Item.Nombre))
+        {
+            await DisplayAlert("Falta el del nombre del cliente", "Ingrese el nombre del cliente", "OK");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(Item.Apellido))
+        {
+            await DisplayAlert("Falta el del apellido del cliente", "Ingrese el apellido del cliente", "OK");
+            return;
+        }
+
+        if (string.IsNullOrWhiteSpace(Item.Teléfono))
+        {
+            await DisplayAlert("Falta el del teléfono del cliente", "Ingrese el teléfono del cliente", "OK");
+            return;
+        }
+
+        await basededatos.SaveItemAsync(Item);
+        await Shell.Current.GoToAsync("..");
+    }
+    async void OnCancelClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("..");
+        Borrar();
+    }
+
     public void Limpiar()
     {
         Cantidad.Text = string.Empty;
@@ -632,46 +699,5 @@ public partial class Comprar : ContentPage
         orden20 = 0;
         orden21 = 0;
         Nuevo.IsVisible = false;
-    }
-
-    private void AgregarClicked(object sender, EventArgs e)
-    {
-        Limpiar();
-        Nuevo.Text = "Ahora puedes ingresar otra cantidad y seleccionar otro producto";
-        Nuevo.IsVisible = true;
-    }
-
-    private void RegistrarCompraClicked(object sender, EventArgs e)
-    {
-        total += orden1 += orden2 += orden3 += orden4 += orden5 += orden6
-              += orden7 += orden8 += orden9 += orden10 += orden11 += orden12
-              += orden13 += orden14 += orden15 += orden16 += orden17 += orden18
-              += orden19 += orden20 += orden21;
-
-        if (total > 0)
-        {
-            Navigation.PushAsync(new Registrar(this, total));
-        }
-        else
-        {
-            DisplayAlert("Error", "Introduce los datos solicitados", "Ok");
-        }
-    }
-
-    private void CotizarCompraClicked(object sender, EventArgs e)
-    {
-        total += orden1 += orden2 += orden3 += orden4 += orden5 += orden6
-              += orden7 += orden8 += orden9 += orden10 += orden11 += orden12
-              += orden13 += orden14 += orden15 += orden16 += orden17 += orden18
-              += orden19 += orden20 += orden21;
-
-        if (total > 0)
-        {
-            Navigation.PushAsync(new Cotizar(this, total));
-        }
-        else
-        {
-            DisplayAlert("Error", "Introduce los datos solicitados", "Ok");
-        }
     }
 }

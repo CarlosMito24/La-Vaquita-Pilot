@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Proyecto.Models"
+             x:Class="Proyecto.Paginas.Pedidos"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+             ios:Page.UseSafeArea="True"
+             Title="Pedidos">
+
+    <ScrollView>
+        <Grid RowDefinitions="Auto, *">
+            <Button Grid.Row="0" Text="Agregar" 
+                Clicked="OnItemAdded"
+                Margin="20"
+                BackgroundColor="#e6b209" 
+                FontAttributes="Bold"
+                CornerRadius="20"
+                TextColor="White"/>
+
+            <CollectionView
+        VerticalOptions="Fill"
+        ItemsSource="{Binding Items}"
+        SelectionMode="Single"
+         Grid.Row="1">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Variables">
+                        <Grid ColumnDefinitions="*, *, *, *, Auto, Auto, Auto" Padding="20">
+                            <Label Text="{Binding Nombre}" 
+                                   VerticalTextAlignment="Center"
+                                    Grid.Column="0"/>
+                            
+                            <Label Text="{Binding Apellido}"
+       VerticalTextAlignment="Center"
+       Grid.Column="1"/>
+                            
+                            <Label Text="{Binding Teléfono}"
+       VerticalTextAlignment="Center"
+       Grid.Column="2"/>
+                            
+                            <Label Text="{Binding Total}"
+       VerticalTextAlignment="Center"
+       Grid.Column="3"/>
+                            
+                            <Label Text="{Binding Fecha}"
+       VerticalTextAlignment="Center"
+       Grid.Column="4"/>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+    </ScrollView>
+</ContentPage>
