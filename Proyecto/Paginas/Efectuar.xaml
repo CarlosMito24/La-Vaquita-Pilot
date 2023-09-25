@@ -487,7 +487,7 @@
                         Grid.ColumnSpan="2"/>
 
                 <Button Text="Cancelar" 
-                        Margin="10, 1, 10, 0"
+                        Margin="10, 1, 10, 1"
                         Clicked="OnCancelClicked"
                         BackgroundColor="ForestGreen"
                         FontAttributes="Bold"
