@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Proyecto.Paginas.Efectuar"
+             x:Class="Proyecto.Paginas.Comprar"
              Title="{Binding Nombre}"
              xmlns:models="clr-namespace:Proyecto.Models"
              x:DataType="models:Variables">
@@ -19,7 +19,7 @@
                    Margin="10, 10, 10, 10"
                    FontFamily="Georgia"
                    HorizontalTextAlignment="Center" 
-                   VerticalTextAlignment="Center"  />
+                   VerticalTextAlignment="Center"/>
 
             <Label Text="Apellido:"   
                    Margin="10, 10, 10, 10"
@@ -87,24 +87,13 @@
                     <RowDefinition Height="auto" x:Name="Grow30"/>
                     <RowDefinition Height="auto" x:Name="Grow31"/>
                     <RowDefinition Height="auto" x:Name="Grow32"/>
-                    <RowDefinition Height="auto" x:Name="Grow33"/>
-                    <RowDefinition Height="auto" x:Name="Grow34"/>
-                    <RowDefinition Height="auto" x:Name="Grow35"/>
-                    <RowDefinition Height="auto" x:Name="Grow36"/>
-                    <RowDefinition Height="auto" x:Name="Grow37"/>
-                    <RowDefinition Height="auto" x:Name="Grow38"/>
-                    <RowDefinition Height="auto" x:Name="Grow39"/>
-                    <RowDefinition Height="auto" x:Name="Grow40"/>
-                    <RowDefinition Height="auto" x:Name="Grow41"/>
-                    <RowDefinition Height="auto" x:Name="Grow42"/>
-                    <RowDefinition Height="auto" x:Name="Grow43"/>
                 </Grid.RowDefinitions>
 
                 <Label FontFamily="Georgia"
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="6"
+                        Grid.Row="0"
                         Grid.ColumnSpan="2"
                         Text="Indica la cantidad que deseas"/>
 
@@ -114,34 +103,26 @@
                         Margin="10, 10, 10, 10"
                         x:Name="Cantidad"
                         Keyboard="Numeric"
-                        Grid.Row="7"
-                        Grid.ColumnSpan="2"/>   
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"/>
 
                 <Button Text="Agregar más productos" 
                          FontFamily="Georgia" 
                          Margin="10, 10, 10, 10" 
                          Grid.Column="0" 
-                         Grid.Row="8"
+                         Grid.Row="2"
                          Grid.ColumnSpan="2"
                          CornerRadius="20"
                          BackgroundColor="ForestGreen"
                          TextColor="AliceBlue"
-                         Clicked="AgregarClicked"/>
+                         Clicked="AgregarClicked"
+                        FontAttributes="Bold"/>
 
                 <Label FontFamily="Georgia"
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="9"
-                        Grid.ColumnSpan="2"
-                        IsVisible="False"
-                        x:Name="Nuevo"/>
-
-                <Label FontFamily="Georgia"
-                        HorizontalTextAlignment="Center" 
-                        VerticalTextAlignment="Center" 
-                        Margin="10, 10, 10, 10"
-                        Grid.Row="10"
+                        Grid.Row="3"
                         Grid.ColumnSpan="2"
                         Text="Selecciona el producto que deseas"/>
 
@@ -149,13 +130,13 @@
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="11"
+                        Grid.Row="4"
                         Grid.Column="0"
                         Text="Selecciona el tipo de queso que deseas"/>
 
                 <ImageButton Source="flechaabajo.png"
                               Grid.Column="1"
-                              Grid.Row="11"
+                              Grid.Row="4"
                               CornerRadius="20"
                               Margin="10, 10, 10, 10"
                               WidthRequest="40"
@@ -167,7 +148,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2"
-                         Grid.Row="12"
+                         Grid.Row="5"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -179,7 +160,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2"
-                         Grid.Row="13"
+                         Grid.Row="6"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -191,7 +172,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="14"
+                         Grid.Row="7"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -203,7 +184,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2"
-                         Grid.Row="15"
+                         Grid.Row="8"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -215,7 +196,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2"
-                         Grid.Row="16"
+                         Grid.Row="9"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -227,7 +208,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="17"
+                         Grid.Row="10"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -239,7 +220,7 @@
                          FontFamily="Georgia"
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="18"
+                         Grid.Row="11"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -251,7 +232,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="19"
+                         Grid.Row="12"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -263,7 +244,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="20"
+                         Grid.Row="13"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -275,13 +256,13 @@
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="21"
+                        Grid.Row="14"
                         Grid.Column="0"
                         Text="Selecciona el tipo de queso crema que deseas"/>
 
                 <ImageButton Source="flechaabajo.png"
                               Grid.Column="1"
-                              Grid.Row="21"
+                              Grid.Row="14"
                               CornerRadius="20"
                               Margin="10, 10, 10, 10"
                               WidthRequest="40"
@@ -293,7 +274,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="22"
+                         Grid.Row="15"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -305,7 +286,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="23"
+                         Grid.Row="16"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -317,7 +298,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="24"
+                         Grid.Row="17"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -329,7 +310,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="25"
+                         Grid.Row="18"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -341,13 +322,13 @@
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="26"
+                        Grid.Row="19"
                         Grid.Column="0"
                         Text="Selecciona la presentación de crema que deseas"/>
 
                 <ImageButton Source="flechaabajo.png"
                               Grid.Column="1"
-                              Grid.Row="26"
+                              Grid.Row="19"
                               CornerRadius="20"
                               Margin="10, 10, 10, 10"
                               WidthRequest="40"
@@ -359,7 +340,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="27"
+                         Grid.Row="20"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -371,7 +352,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="28"
+                         Grid.Row="21"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -383,7 +364,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="29"
+                         Grid.Row="22"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -395,13 +376,13 @@
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="30"
+                        Grid.Row="23"
                         Grid.Column="0"
                         Text="Selecciona la presentación de leche que deseas"/>
 
                 <ImageButton Source="flechaabajo.png"
                               Grid.Column="1"
-                              Grid.Row="30"
+                              Grid.Row="23"
                               CornerRadius="20"
                               Margin="10, 10, 10, 10"
                               WidthRequest="40"
@@ -413,7 +394,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="31"
+                         Grid.Row="24"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -425,7 +406,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="32"
+                         Grid.Row="25"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -437,7 +418,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="33"
+                         Grid.Row="26"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -449,7 +430,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="34"
+                         Grid.Row="27"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -461,7 +442,7 @@
                          FontFamily="Georgia" 
                          Margin="10, 1, 10, 1" 
                          Grid.ColumnSpan="2" 
-                         Grid.Row="35"
+                         Grid.Row="28"
                          CornerRadius="20"
                          BackgroundColor="#448EE4"
                          TextColor="AliceBlue"
@@ -473,9 +454,9 @@
                         HorizontalTextAlignment="Center" 
                         VerticalTextAlignment="Center" 
                         Margin="10, 10, 10, 10"
-                        Grid.Row="36"
+                        Grid.Row="29"
                         Grid.ColumnSpan="2"
-                        Text="Registra tu compra cuando hayas añadido todos tus productos"/>
+                        Text="Presiona el botón Guardar cuando hayas añadido todos tus productos"/>
 
                 <Button Text="Guardar" Margin="10, 10, 10, 1"
                         Clicked="OnSaveClicked"
@@ -483,7 +464,7 @@
                         FontAttributes="Bold"
                         CornerRadius="20"
                         TextColor="AliceBlue"
-                        Grid.Row="41"
+                        Grid.Row="30"
                         Grid.ColumnSpan="2"/>
 
                 <Button Text="Cancelar" 
@@ -493,7 +474,7 @@
                         FontAttributes="Bold"
                         CornerRadius="20"
                         TextColor="AliceBlue"
-                        Grid.Row="42"
+                        Grid.Row="31"
                         Grid.ColumnSpan="2"/>
 
                 <Button Text="Borrar" 
@@ -503,7 +484,7 @@
                         FontAttributes="Bold"
                         CornerRadius="20"
                         TextColor="AliceBlue"
-                        Grid.Row="43"
+                        Grid.Row="32"
                         Grid.ColumnSpan="2"/>
             </Grid>
         </VerticalStackLayout>

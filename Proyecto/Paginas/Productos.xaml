@@ -34,7 +34,8 @@
                VerticalTextAlignment="Center" 
                Margin="10, 10, 10, 10"
                FontSize="Medium"
-               Text="Tipos De Quesos"/>
+               Text="Tipos De Quesos"
+                   FontAttributes="Bold"/>
 
             <CarouselView x:Name="CarouselView1" IndicatorView="Indicador1">
                 <CarouselView.ItemTemplate>
@@ -78,7 +79,8 @@
                VerticalTextAlignment="Center" 
                Margin="10, 10, 10, 10"
                FontSize="Medium"
-               Text="Tipos De Queso Crema"/>
+               Text="Tipos De Queso Crema"
+                   FontAttributes="Bold"/>
 
             <CarouselView x:Name="CarouselView2" IndicatorView="Indicador2">
                 <CarouselView.ItemTemplate>
@@ -121,7 +123,8 @@
            VerticalTextAlignment="Center" 
            Margin="10, 10, 10, 10"
            FontSize="Medium"
-           Text="Crema"/>
+           Text="Crema"
+                   FontAttributes="Bold"/>
 
             <CarouselView x:Name="CarouselView3" IndicatorView="Indicador3">
                 <CarouselView.ItemTemplate>
@@ -165,7 +168,8 @@
            VerticalTextAlignment="Center" 
            Margin="10, 10, 10, 10"
            FontSize="Medium"
-           Text="Leche"/>
+           Text="Leche"
+                   FontAttributes="Bold"/>
 
             <CarouselView x:Name="CarouselView4" IndicatorView="Indicador4">
                 <CarouselView.ItemTemplate>

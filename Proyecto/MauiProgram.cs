@@ -21,7 +21,7 @@ public static class MauiProgram
 		builder.Logging.AddDebug();
 #endif
         builder.Services.AddSingleton<Pedidos>();
-        builder.Services.AddTransient<Efectuar>();
+        builder.Services.AddTransient<Comprar>();
         builder.Services.AddSingleton<Data>();
         return builder.Build();
 	}

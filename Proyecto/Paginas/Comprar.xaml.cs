@@ -5,7 +5,7 @@ namespace Proyecto.Paginas;
 
 [QueryProperty("Item", "Item")]
 
-public partial class Efectuar : ContentPage
+public partial class Comprar : ContentPage
 {
     public Variables Item
     {
@@ -15,7 +15,7 @@ public partial class Efectuar : ContentPage
 
     Data basededatos;
 
-    public Efectuar(Data data)
+    public Comprar(Data data)
     {
         InitializeComponent();
         basededatos = data;
@@ -87,7 +87,7 @@ public partial class Efectuar : ContentPage
         Quesillo.IsVisible = !Quesillo.IsVisible;
         QuesoMozzarella.IsVisible = !QuesoMozzarella.IsVisible;
         QuesoCapita.IsVisible = !QuesoCapita.IsVisible;
-        QuesoKraft.IsVisible = QuesoKraft.IsVisible;
+        QuesoKraft.IsVisible = !QuesoKraft.IsVisible;
         QuesoParmesano.IsVisible = !QuesoParmesano.IsVisible;
         QuesoFresco.IsVisible = !QuesoFresco.IsVisible;
     }
@@ -618,8 +618,7 @@ public partial class Efectuar : ContentPage
     private void AgregarClicked(object sender, EventArgs e)
     {
         Limpiar();
-        Nuevo.Text = "Ahora puedes ingresar otra cantidad y seleccionar otro producto";
-        Nuevo.IsVisible = true;
+        DisplayAlert("Listo", "Ahora puedes agregar mas productos a tu compra", "Continuar");
     }
 
     async void OnSaveClicked(object sender, EventArgs e)
@@ -696,7 +695,6 @@ public partial class Efectuar : ContentPage
         orden19 = 0;
         orden20 = 0;
         orden21 = 0;
-        Nuevo.IsVisible = false;
     }
 
     async void OnBorrarClicked(object sender, EventArgs e)

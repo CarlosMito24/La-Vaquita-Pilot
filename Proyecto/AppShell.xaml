@@ -17,7 +17,7 @@
 
     <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Productos" ContentTemplate="{DataTemplate Paginas:Productos}"></ShellContent>
-        <ShellContent Title="Comprar" ContentTemplate="{DataTemplate Paginas:Pedidos}"></ShellContent>
+        <ShellContent Title="Mis Pedidos" ContentTemplate="{DataTemplate Paginas:Pedidos}"></ShellContent>
         <ShellContent Title="Información" ContentTemplate="{DataTemplate Paginas:Info}"></ShellContent>
     </FlyoutItem>
 </Shell>

@@ -31,7 +31,7 @@ public partial class Pedidos : ContentPage
 
     async void OnItemAdded(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(Efectuar), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(Comprar), true, new Dictionary<string, object>
         {
             ["Item"] = new Variables()
         });
@@ -42,7 +42,7 @@ public partial class Pedidos : ContentPage
         if (e.CurrentSelection.FirstOrDefault() is not Variables item)
             return;
 
-        await Shell.Current.GoToAsync(nameof(Efectuar), true, new Dictionary<string, object>
+        await Shell.Current.GoToAsync(nameof(Comprar), true, new Dictionary<string, object>
         {
             ["Item"] = item
         });

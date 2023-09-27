@@ -39,7 +39,7 @@
 		<MauiIcon Include="Resources\AppIcon\logo.svg" Basesize="128,128" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\logo.png" Color="#dde031"/>
+		<MauiSplashScreen Include="Resources\Splash\logo.png" Color="#FFFF99" />
 		
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -57,8 +57,12 @@
 		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.6" />
 	</ItemGroup>
 
+
 	<ItemGroup>
-	  <MauiXaml Update="Paginas\Efectuar.xaml">
+	  <MauiXaml Update="Paginas\Comprar.xaml.cs">
+		<Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\Comprar.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Info.xaml">
