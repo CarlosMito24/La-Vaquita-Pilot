@@ -46,7 +46,6 @@ public partial class Comprar : ContentPage
     double leche900ml = 1.55;
     double lechemediogalon = 3.25;
     double lechegalon = 6.10;
-    double total = 0;
 
     private void PrimeraFlechaClicked(object sender, EventArgs e)
     {
@@ -757,5 +756,232 @@ public partial class Comprar : ContentPage
             return;
         await basededatos.DeleteItemAsync(Item);
         await Shell.Current.GoToAsync("..");
+    }
+
+    private void MostrarDetallesClicked (object sender, EventArgs e)
+    {
+        if (string.IsNullOrWhiteSpace(LabelProducto1.Text))
+        {
+            LabelProducto1.IsVisible = false;
+            LabelSubtotal1.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto1.IsVisible = true;
+            LabelSubtotal1.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto2.Text))
+        {
+            LabelProducto2.IsVisible = false;
+            LabelSubtotal2.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto2.IsVisible = true;
+            LabelSubtotal2.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto3.Text))
+        {
+            LabelProducto3.IsVisible = false;
+            LabelSubtotal3.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto3.IsVisible = true;
+            LabelSubtotal3.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto5.Text))
+        {
+            LabelProducto5.IsVisible = false;
+            LabelSubtotal5.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto5.IsVisible = true;
+            LabelSubtotal5.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto6.Text))
+        {
+            LabelProducto6.IsVisible = false;
+            LabelSubtotal6.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto6.IsVisible = true;
+            LabelSubtotal6.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto7.Text))
+        {
+            LabelProducto7.IsVisible = false;
+            LabelSubtotal7.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto7.IsVisible = true;
+            LabelSubtotal7.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto8.Text))
+        {
+            LabelProducto8.IsVisible = false;
+            LabelSubtotal8.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto8.IsVisible = true;
+            LabelSubtotal8.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto9.Text))
+        {
+            LabelProducto9.IsVisible = false;
+            LabelSubtotal9.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto9.IsVisible = true;
+            LabelSubtotal9.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto10.Text))
+        {
+            LabelProducto10.IsVisible = false;
+            LabelSubtotal10.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto10.IsVisible = true;
+            LabelSubtotal10.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto11.Text))
+        {
+            LabelProducto11.IsVisible = false;
+            LabelSubtotal11.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto11.IsVisible = true;
+            LabelSubtotal11.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto12.Text))
+        {
+            LabelProducto12.IsVisible = false;
+            LabelSubtotal12.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto12.IsVisible = true;
+            LabelSubtotal12.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto13.Text))
+        {
+            LabelProducto13.IsVisible = false;
+            LabelSubtotal13.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto13.IsVisible = true;
+            LabelSubtotal13.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto14.Text))
+        {
+            LabelProducto14.IsVisible = false;
+            LabelSubtotal14.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto14.IsVisible = true;
+            LabelSubtotal14.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto15.Text))
+        {
+            LabelProducto15.IsVisible = false;
+            LabelSubtotal15.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto15.IsVisible = true;
+            LabelSubtotal15.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto16.Text))
+        {
+            LabelProducto16.IsVisible = false;
+            LabelSubtotal16.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto16.IsVisible = true;
+            LabelSubtotal16.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto17.Text))
+        {
+            LabelProducto17.IsVisible = false;
+            LabelSubtotal17.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto17.IsVisible = true;
+            LabelSubtotal17.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto18.Text))
+        {
+            LabelProducto18.IsVisible = false;
+            LabelSubtotal18.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto18.IsVisible = true;
+            LabelSubtotal18.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto19.Text))
+        {
+            LabelProducto19.IsVisible = false;
+            LabelSubtotal19.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto19.IsVisible = true;
+            LabelSubtotal19.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto20.Text))
+        {
+            LabelProducto20.IsVisible = false;
+            LabelSubtotal20.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto20.IsVisible = true;
+            LabelSubtotal20.IsVisible = true;
+        }
+
+        if (string.IsNullOrWhiteSpace(LabelProducto21.Text))
+        {
+            LabelProducto21.IsVisible = false;
+            LabelSubtotal21.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto21.IsVisible = true;
+            LabelSubtotal21.IsVisible = true;
+        }
+
+        MostrarTotalLabel.IsVisible = true;
+        MostrarTotalLabelDatos.Text = "$ " + Item.Total;
+        MostrarTotalLabelDatos.IsVisible = true;
     }
 }

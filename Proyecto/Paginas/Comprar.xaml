@@ -112,6 +112,7 @@
                     <RowDefinition Height="auto" x:Name="Grow55"/>
                     <RowDefinition Height="auto" x:Name="Grow56"/>
                     <RowDefinition Height="auto" x:Name="Grow57"/>
+                    <RowDefinition Height="auto" x:Name="Grow58"/>
                 </Grid.RowDefinitions>
 
                 <Label FontFamily="Georgia"
@@ -544,121 +545,141 @@
                        Grid.Row="36"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto1"/>
+                       x:Name="LabelProducto1"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto1}"
                        Grid.Row="36"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal1"/>
+                       x:Name="LabelSubtotal1"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto2}"
                        Grid.Row="37"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto2"/>
+                       x:Name="LabelProducto2"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto2}"
                        Grid.Row="37"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal2"/>
+                       x:Name="LabelSubtotal2"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto3}"
                        Grid.Row="38"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto3"/>
+                       x:Name="LabelProducto3"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto3}"
                        Grid.Row="38"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal3"/>
+                       x:Name="LabelSubtotal3"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto4}"
                        Grid.Row="39"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto4"/>
+                       x:Name="LabelProducto4"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto4}"
                        Grid.Row="39"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal4"/>
+                       x:Name="LabelSubtotal4"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto5}"
                        Grid.Row="40"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto5"/>
+                       x:Name="LabelProducto5"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto5}"
                        Grid.Row="40"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal5"/>
+                       x:Name="LabelSubtotal5"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto6}"
                        Grid.Row="41"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto6"/>
+                       x:Name="LabelProducto6"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto6}"
                        Grid.Row="41"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal6"/>
+                       x:Name="LabelSubtotal6"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto7}"
                        Grid.Row="42"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto7"/>
+                       x:Name="LabelProducto7"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto7}"
                        Grid.Row="42"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal7"/>
+                       x:Name="LabelSubtotal7"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto8}"
                        Grid.Row="43"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto8"/>
+                       x:Name="LabelProducto8"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto8}"
                        Grid.Row="43"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal8"/>
+                       x:Name="LabelSubtotal8"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto9}"
                        Grid.Row="44"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto9"/>
+                       x:Name="LabelProducto9"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto9}"
                        Grid.Row="44"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal9"/>
+                       x:Name="LabelSubtotal9"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto10}"
                        Grid.Row="45"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto10"/>
+                       x:Name="LabelProducto10"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto10}"
                        Grid.Row="45"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal10"/>
+                       x:Name="LabelSubtotal10"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto11}"
                        Grid.Row="46"
@@ -671,127 +692,173 @@
                        Grid.Row="46"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal11"/>
+                       x:Name="LabelSubtotal11"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto12}"
                        Grid.Row="47"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto12"/>
+                       x:Name="LabelProducto12"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto12}"
                        Grid.Row="47"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal12"/>
+                       x:Name="LabelSubtotal12"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto13}"
                        Grid.Row="48"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto13"/>
+                       x:Name="LabelProducto13"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto13}"
                        Grid.Row="48"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal13"/>
+                       x:Name="LabelSubtotal13"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto14}"
                        Grid.Row="49"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto14"/>
+                       x:Name="LabelProducto14"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto14}"
                        Grid.Row="49"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal14"/>
+                       x:Name="LabelSubtotal14"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto15}"
                        Grid.Row="50"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto15"/>
+                       x:Name="LabelProducto15"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto15}"
                        Grid.Row="50"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal15"/>
+                       x:Name="LabelSubtotal15"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto16}"
                        Grid.Row="51"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto16"/>
+                       x:Name="LabelProducto16"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto16}"
                        Grid.Row="51"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal16"/>
+                       x:Name="LabelSubtotal16"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto17}"
                        Grid.Row="52"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto17"/>
+                       x:Name="LabelProducto17"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto17}"
                        Grid.Row="52"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal17"/>
+                       x:Name="LabelSubtotal17"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto18}"
                        Grid.Row="53"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto18"/>
+                       x:Name="LabelProducto18"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto18}"
                        Grid.Row="53"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal18"/>
+                       x:Name="LabelSubtotal18"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto19}"
                        Grid.Row="54"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto19"/>
+                       x:Name="LabelProducto19"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto19}"
                        Grid.Row="54"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal19"/>
+                       x:Name="LabelSubtotal19"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto20}"
                        Grid.Row="55"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto20"/>
+                       x:Name="LabelProducto20"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto20}"
                        Grid.Row="55"
                        Grid.Column="1"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal20"/>
+                       x:Name="LabelSubtotal20"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding DetallesProducto21}"
                        Grid.Row="56"
                        Grid.Column="0"
                        Margin="10, 1, 10, 1"
-                       x:Name="LabelProducto21"/>
+                       x:Name="LabelProducto21"
+                       IsVisible="false"/>
 
                 <Label Text="{Binding SubTotalProducto21}"
                        Grid.Row="56"
                        Grid.Column="1"
-                       Margin="10, 1, 10, 1"
-                       x:Name="LabelSubtotal21"/>
+                       Margin="10, 1, 10, 10"
+                       x:Name="LabelSubtotal21"
+                       IsVisible="false"/>
+
+                <Label Text="Total:"
+                       Grid.Row="57"
+                       Grid.ColumnSpan="0"
+                       Margin="10, 10, 10, 10"
+                       x:Name="MostrarTotalLabel"
+                       IsVisible="false"
+                       FontAttributes="Bold"/>
+
+                <Label Text=""
+                       Grid.Row="57"
+                       Grid.Column="1"
+                       Margin="10, 10, 10, 10"
+                       x:Name="MostrarTotalLabelDatos"
+                       IsVisible="false"
+                       FontAttributes="Bold"/>
+
+                <Button Clicked="MostrarDetallesClicked" 
+                        Text="Mostrar Detalles" 
+                        Grid.Row="58"
+                        Grid.ColumnSpan="2"
+                        BackgroundColor="ForestGreen"
+                        FontAttributes="Bold"
+                        CornerRadius="20"
+                        TextColor="AliceBlue"/>
             </Grid>
         </VerticalStackLayout>
     </ScrollView>
