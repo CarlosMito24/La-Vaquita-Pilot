@@ -47,6 +47,4 @@ public partial class Pedidos : ContentPage
             ["Item"] = item
         });
     }
-
-
 }

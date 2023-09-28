@@ -59,8 +59,8 @@ namespace Proyecto.Models
         public string SubTotalProducto20 { get; set; }
         public string DetallesProducto21 { get; set; }
         public string SubTotalProducto21 { get; set; }
-        public double orden1 { get; set; }  
-        public double orden2 { get; set; } = 0;
+        public double orden1 { get; set; }
+        public double orden2 { get; set; } 
         public double orden3 { get; set; }
         public double orden4 { get; set; }
         public double orden5 { get; set; }
@@ -80,6 +80,6 @@ namespace Proyecto.Models
         public double orden19 { get; set; }
         public double orden20 { get; set; }
         public double orden21 { get; set;}
-        public double total { get; set; }
+        public double total1 { get; set; }
     }
 }

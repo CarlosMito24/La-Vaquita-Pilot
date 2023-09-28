@@ -835,21 +835,7 @@
                        x:Name="LabelSubtotal21"
                        IsVisible="false"/>
 
-                <Label Text="Total:"
-                       Grid.Row="57"
-                       Grid.ColumnSpan="0"
-                       Margin="10, 10, 10, 10"
-                       x:Name="MostrarTotalLabel"
-                       IsVisible="false"
-                       FontAttributes="Bold"/>
-
-                <Label Text=""
-                       Grid.Row="57"
-                       Grid.Column="1"
-                       Margin="10, 10, 10, 10"
-                       x:Name="MostrarTotalLabelDatos"
-                       IsVisible="false"
-                       FontAttributes="Bold"/>
+                
 
                 <Button Clicked="MostrarDetallesClicked" 
                         Text="Mostrar Detalles" 
