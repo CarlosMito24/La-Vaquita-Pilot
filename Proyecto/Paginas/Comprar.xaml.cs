@@ -471,7 +471,7 @@ public partial class Comprar : ContentPage
             SegundaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Chile Chipotle", "Ok");
-            Item.DetallesProducto13 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto13 = cantidad + " Unidades de Queso Crema Con Chile Chipotle";
             string subtotal13 = Item.orden13.ToString("0.00");
             Item.SubTotalProducto13 = "$ " + subtotal13;
         }
@@ -493,7 +493,7 @@ public partial class Comprar : ContentPage
             TerceraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 95G", "Ok");
-            Item.DetallesProducto14 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto14 = cantidad + " Unidades de Crema de 95G";
             string subtotal14 = Item.orden14.ToString("0.00");
             Item.SubTotalProducto14 = "$ " + subtotal14;
         }
@@ -515,7 +515,7 @@ public partial class Comprar : ContentPage
             TerceraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 190G", "Ok");
-            Item.DetallesProducto15 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto15 = cantidad + " Unidades de Crema de 190G";
             string subtotal15 = Item.orden15.ToString("0.00");
             Item.SubTotalProducto15 = "$ " + subtotal15;
         }
@@ -537,7 +537,7 @@ public partial class Comprar : ContentPage
             TerceraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Botellla de crema", "Ok");
-            Item.DetallesProducto16 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto16 = cantidad + " Unidades de Botellla de crema";
             string subtotal16 = Item.orden16.ToString("0.00");
             Item.SubTotalProducto16 = "$ " + subtotal16;
         }
@@ -561,7 +561,7 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 473ML", "Ok");
-            Item.DetallesProducto17 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto17 = cantidad + " Unidades de Leche Entera de 473ML";
             string subtotal17 = Item.orden17.ToString("0.00");
             Item.SubTotalProducto17 = "$ " + subtotal17;
         }
@@ -585,7 +585,7 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 750ML", "Ok");
-            Item.DetallesProducto18 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto18 = cantidad + " Unidades de Leche Entera de 750ML";
             string subtotal18 = Item.orden18.ToString("0.00");
             Item.SubTotalProducto18 = "$ " + subtotal18;
         }
@@ -609,7 +609,7 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 900ML", "Ok");
-            Item.DetallesProducto19 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto19 = cantidad + " Unidades de Leche Entera de 900ML";
             string subtotal19 = Item.orden19.ToString("0.00");
             Item.SubTotalProducto19 = "$ " + subtotal19;
         }
@@ -633,7 +633,7 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Medio Galón", "Ok");
-            Item.DetallesProducto20 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto20 = cantidad + " Unidades de Leche Entera Medio Galón";
             string subtotal20 = Item.orden20.ToString("0.00");
             Item.SubTotalProducto20 = "$ " + subtotal20;
         }
@@ -657,7 +657,7 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Galón", "Ok");
-            Item.DetallesProducto21 = cantidad + " Unidades de Queso Crema";
+            Item.DetallesProducto21 = cantidad + " Unidades de de Leche Entera Galón";
             string subtotal21 = Item.orden21.ToString("0.00");
             Item.SubTotalProducto21 = "$ " + subtotal21;
         }
