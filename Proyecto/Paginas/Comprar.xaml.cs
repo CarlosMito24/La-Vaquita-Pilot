@@ -47,27 +47,6 @@ public partial class Comprar : ContentPage
     double lechemediogalon = 3.25;
     double lechegalon = 6.10;
     double total = 0;
-    double orden1;
-    double orden2;
-    double orden3;
-    double orden4;
-    double orden5;
-    double orden6;
-    double orden7;
-    double orden8;
-    double orden9;
-    double orden10;
-    double orden11;
-    double orden12;
-    double orden13;
-    double orden14;
-    double orden15;
-    double orden16;
-    double orden17;
-    double orden18;
-    double orden19;
-    double orden20;
-    double orden21;
 
     private void PrimeraFlechaClicked(object sender, EventArgs e)
     {
@@ -150,7 +129,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden1 = cantidad * quesoduroblando;
+            Item.orden1 = cantidad * quesoduroblando;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -164,6 +143,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Duro Blando", "Ok");
+            Item.DetallesProducto1 = cantidad + " Libras de Queso Duro Blando";
+            string subtotal1 = Item.orden1.ToString("0.00");
+            Item.SubTotalProducto1 = "$ " + subtotal1;
         }
         else
         {
@@ -175,7 +157,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden2 = cantidad * quesoduroviejo;
+            Item.orden2 = cantidad * quesoduroviejo;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -189,6 +171,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Duro Viejo", "Ok");
+            Item.DetallesProducto2 = cantidad + " Libras de Queso Duro Viejo";
+            string subtotal2 = Item.orden2.ToString("0.00");
+            Item.SubTotalProducto2 = "$ " + subtotal2;
         }
         else
         {
@@ -200,7 +185,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden3 = cantidad * quesorayado;
+            Item.orden3 = cantidad * quesorayado;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -214,6 +199,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Rayado", "Ok");
+            Item.DetallesProducto3 = cantidad + " Libras de Queso Rayado";
+            string subtotal3 = Item.orden3.ToString("0.00");
+            Item.SubTotalProducto3 = "$ " + subtotal3;
         }
         else
         {
@@ -225,7 +213,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden4 = cantidad * quesillo;
+            Item.orden4 = cantidad * quesillo;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -239,6 +227,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Quesillo", "Ok");
+            Item.DetallesProducto4 = cantidad + " Libras de Quesillo";
+            string subtotal4 = Item.orden4.ToString("0.00");
+            Item.SubTotalProducto4 = "$ " + subtotal4;
         }
         else
         {
@@ -250,7 +241,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden5 = cantidad * quesomozzarella;
+            Item.orden5 = cantidad * quesomozzarella;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -264,6 +255,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Mozzarella", "Ok");
+            Item.DetallesProducto5 = cantidad + " Libras de Queso Mozarella";
+            string subtotal5 = Item.orden5.ToString("0.00");
+            Item.SubTotalProducto5 = "$ " + subtotal5;
         }
         else
         {
@@ -275,7 +269,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden6 = cantidad * quesocapita;
+            Item.orden6 = cantidad * quesocapita;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -289,6 +283,10 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Capita", "Ok");
+            Item.DetallesProducto6 = cantidad + " Libras de Queso Capita";
+            string subtotal6 = Item.orden6.ToString("0.00");
+            Item.SubTotalProducto6 = "$ " + subtotal6;
+
         }
         else
         {
@@ -300,7 +298,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden7 = cantidad * quesokraft;
+            Item.orden7 = cantidad * quesokraft;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -314,6 +312,19 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Kraft", "Ok");
+            Item.DetallesProducto7 = cantidad + " Libras de Queso Kraft";
+            string subtotal7 = Item.orden7.ToString("0.00");
+            Item.SubTotalProducto7 = "$ " + subtotal7;
+            if (Item.orden7 > 0)
+            {
+                LabelProducto7.IsVisible = true;
+                LabelSubtotal7.IsVisible = true;
+            }
+            else
+            {
+                LabelProducto7.IsVisible = false;
+                LabelSubtotal7.IsVisible = false;
+            }
         }
         else
         {
@@ -325,7 +336,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden8 = cantidad * quesoparmesano;
+            Item.orden8 = cantidad * quesoparmesano;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -339,6 +350,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Parmesano", "Ok");
+            Item.DetallesProducto8 = cantidad + " Libras de Queso Parmesano";
+            string subtotal8 = Item.orden8.ToString("0.00");
+            Item.SubTotalProducto8 = "$ " + subtotal8;
         }
         else
         {
@@ -350,7 +364,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden9 = cantidad * quesofresco;
+            Item.orden9 = cantidad * quesofresco;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -364,6 +378,9 @@ public partial class Comprar : ContentPage
             PrimeraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Fresco", "Ok");
+            Item.DetallesProducto9 = cantidad + " Libras de Queso Fresco";
+            string subtotal9 = Item.orden9.ToString("0.00");
+            Item.SubTotalProducto9 = "$ " + subtotal9;
         }
         else
         {
@@ -375,7 +392,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden10 = cantidad * quesocrema;
+            Item.orden10 = cantidad * quesocrema;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -384,6 +401,9 @@ public partial class Comprar : ContentPage
             SegundaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema", "Ok");
+            Item.DetallesProducto10 = cantidad + " Unidades de Queso Crema";
+            string subtotal10 = Item.orden10.ToString("0.00");
+            Item.SubTotalProducto10 = "$ " + subtotal10;
         }
         else
         {
@@ -395,7 +415,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden11 = cantidad * quesocremaconloroco;
+            Item.orden11 = cantidad * quesocremaconloroco;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -405,6 +425,9 @@ public partial class Comprar : ContentPage
             SegundaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Loroco", "Ok");
+            Item.DetallesProducto11 = cantidad + " Unidades de Queso Crema Con Loroco";
+            string subtotal11 = Item.orden10.ToString("0.00");
+            Item.SubTotalProducto11 = "$ " + subtotal11;
         }
         else
         {
@@ -416,7 +439,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden12 = cantidad * quesocremacontocino;
+            Item.orden12 = cantidad * quesocremacontocino;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -425,6 +448,9 @@ public partial class Comprar : ContentPage
             SegundaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Tocino", "Ok");
+            Item.DetallesProducto12 = cantidad + " Unidades de Queso Crema Con Tocino";
+            string subtotal12 = Item.orden12.ToString("0.00");
+            Item.SubTotalProducto12 = "$ " + subtotal12;
         }
         else
         {
@@ -436,7 +462,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden13 = cantidad * quesocremachilechipotle;
+            Item.orden13 = cantidad * quesocremachilechipotle;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -445,6 +471,9 @@ public partial class Comprar : ContentPage
             SegundaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Chile Chipotle", "Ok");
+            Item.DetallesProducto13 = cantidad + " Unidades de Queso Crema";
+            string subtotal13 = Item.orden13.ToString("0.00");
+            Item.SubTotalProducto13 = "$ " + subtotal13;
         }
         else
         {
@@ -456,7 +485,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden14 = cantidad * crema95g;
+            Item.orden14 = cantidad * crema95g;
 
             Crema95G.IsVisible = false;
             Crema190G.IsVisible = false;
@@ -464,6 +493,9 @@ public partial class Comprar : ContentPage
             TerceraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 95G", "Ok");
+            Item.DetallesProducto14 = cantidad + " Unidades de Queso Crema";
+            string subtotal14 = Item.orden14.ToString("0.00");
+            Item.SubTotalProducto14 = "$ " + subtotal14;
         }
         else
         {
@@ -475,7 +507,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden15 = cantidad * crema190g;
+            Item.orden15 = cantidad * crema190g;
 
             Crema95G.IsVisible = false;
             Crema190G.IsVisible = false;
@@ -483,6 +515,9 @@ public partial class Comprar : ContentPage
             TerceraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 190G", "Ok");
+            Item.DetallesProducto15 = cantidad + " Unidades de Queso Crema";
+            string subtotal15 = Item.orden15.ToString("0.00");
+            Item.SubTotalProducto15 = "$ " + subtotal15;
         }
         else
         {
@@ -494,7 +529,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden16 = cantidad * botelladecrema;
+            Item.orden16 = cantidad * botelladecrema;
 
             Crema95G.IsVisible = false;
             Crema190G.IsVisible = false;
@@ -502,6 +537,9 @@ public partial class Comprar : ContentPage
             TerceraFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Botellla de crema", "Ok");
+            Item.DetallesProducto16 = cantidad + " Unidades de Queso Crema";
+            string subtotal16 = Item.orden16.ToString("0.00");
+            Item.SubTotalProducto16 = "$ " + subtotal16;
         }
         else
         {
@@ -513,7 +551,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden17 = cantidad * leche473ml;
+            Item.orden17 = cantidad * leche473ml;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -523,6 +561,9 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 473ML", "Ok");
+            Item.DetallesProducto17 = cantidad + " Unidades de Queso Crema";
+            string subtotal17 = Item.orden17.ToString("0.00");
+            Item.SubTotalProducto17 = "$ " + subtotal17;
         }
         else
         {
@@ -534,7 +575,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden18 = cantidad * leche750ml;
+            Item.orden18 = cantidad * leche750ml;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -544,6 +585,9 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 750ML", "Ok");
+            Item.DetallesProducto18 = cantidad + " Unidades de Queso Crema";
+            string subtotal18 = Item.orden18.ToString("0.00");
+            Item.SubTotalProducto18 = "$ " + subtotal18;
         }
         else
         {
@@ -555,7 +599,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden19 = cantidad * leche900ml;
+            Item.orden19 = cantidad * leche900ml;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -565,6 +609,9 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 900ML", "Ok");
+            Item.DetallesProducto19 = cantidad + " Unidades de Queso Crema";
+            string subtotal19 = Item.orden19.ToString("0.00");
+            Item.SubTotalProducto19 = "$ " + subtotal19;
         }
         else
         {
@@ -576,7 +623,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden20 = cantidad * lechemediogalon;
+            Item.orden20 = cantidad * lechemediogalon;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -586,6 +633,9 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Medio Galón", "Ok");
+            Item.DetallesProducto20 = cantidad + " Unidades de Queso Crema";
+            string subtotal20 = Item.orden20.ToString("0.00");
+            Item.SubTotalProducto20 = "$ " + subtotal20;
         }
         else
         {
@@ -597,7 +647,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            orden21 = cantidad * lechegalon;
+            Item.orden21 = cantidad * lechegalon;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -607,6 +657,9 @@ public partial class Comprar : ContentPage
             CuartaFlecha.Source = "flechaabajo.png";
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Galón", "Ok");
+            Item.DetallesProducto21 = cantidad + " Unidades de Queso Crema";
+            string subtotal21 = Item.orden21.ToString("0.00");
+            Item.SubTotalProducto21 = "$ " + subtotal21;
         }
         else
         {
@@ -630,12 +683,12 @@ public partial class Comprar : ContentPage
         // Asignar la fecha actual al Label
         fecha = fechaActual.ToString("dd/MM/yyyy");
 
-        total += orden1 += orden2 += orden3 += orden4 += orden5 += orden6
-              += orden7 += orden8 += orden9 += orden10 += orden11 += orden12
-              += orden13 += orden14 += orden15 += orden16 += orden17 += orden18
-              += orden19 += orden20 += orden21;
+        Item.total += Item.orden1 += Item.orden2 += Item.orden3 += Item.orden4 += Item.orden5 += Item.orden6
+              += Item.orden7 += Item.orden8 += Item.orden9 += Item.orden10 += Item.orden11 += Item.orden12
+              += Item.orden13 += Item.orden14 += Item.orden15 += Item.orden16 += Item.orden17 += Item.orden18
+              += Item.orden19 += Item.orden20 += Item.orden21;
 
-        string totalfinal = total.ToString("0.00");
+        string totalfinal = Item.total.ToString("0.00");
         Item.Total = totalfinal;
         Item.Fecha = fecha;
 
@@ -659,6 +712,7 @@ public partial class Comprar : ContentPage
 
         await basededatos.SaveItemAsync(Item);
         await Shell.Current.GoToAsync("..");
+        
     }
     async void OnCancelClicked(object sender, EventArgs e)
     {
@@ -673,28 +727,28 @@ public partial class Comprar : ContentPage
 
     public void Borrar()
     {
-        total = 0;
-        orden1 = 0;
-        orden2 = 0;
-        orden3 = 0;
-        orden4 = 0;
-        orden5 = 0;
-        orden6 = 0;
-        orden7 = 0;
-        orden8 = 0;
-        orden9 = 0;
-        orden10 = 0;
-        orden11 = 0;
-        orden12 = 0;
-        orden13 = 0;
-        orden14 = 0;
-        orden15 = 0;
-        orden16 = 0;
-        orden17 = 0;
-        orden18 = 0;
-        orden19 = 0;
-        orden20 = 0;
-        orden21 = 0;
+        Item.total = 0;
+        Item.orden1 = 0;
+        Item.orden2 = 0;
+        Item.orden3 = 0;
+        Item.orden4 = 0;
+        Item.orden5 = 0;
+        Item.orden6 = 0;
+        Item.orden7 = 0;
+        Item.orden8 = 0;
+        Item.orden9 = 0;
+        Item.orden10 = 0;
+        Item.orden11 = 0;
+        Item.orden12 = 0;
+        Item.orden13 = 0;
+        Item.orden14 = 0;
+        Item.orden15 = 0;
+        Item.orden16 = 0;
+        Item.orden17 = 0;
+        Item.orden18 = 0;
+        Item.orden19 = 0;
+        Item.orden20 = 0;
+        Item.orden21 = 0;
     }
 
     async void OnBorrarClicked(object sender, EventArgs e)
