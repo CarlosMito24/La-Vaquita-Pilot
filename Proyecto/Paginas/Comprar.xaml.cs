@@ -709,6 +709,12 @@ public partial class Comprar : ContentPage
             return;
         }
 
+        if (Item.total1 == 0)
+        {
+            await DisplayAlert("Advertencia", "No ha ingresado ningún producto, primero ingrese al menos un producto para poder guardar su pedido", "Continuar");
+            return;
+        }
+
         await basededatos.SaveItemAsync(Item);
         await Shell.Current.GoToAsync("..");
         
@@ -979,5 +985,9 @@ public partial class Comprar : ContentPage
             LabelProducto21.IsVisible = true;
             LabelSubtotal21.IsVisible = true;
         }
+
+        LabelMostrarTotalDetalles.Text = "$ " + Item.Total;
+        LabelMostrarTotalDetalles.IsVisible = true;
+        LabelTotalDetalles.IsVisible = true;
     }
 }
