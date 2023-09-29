@@ -799,6 +799,17 @@ public partial class Comprar : ContentPage
             LabelSubtotal3.IsVisible = true;
         }
 
+        if (string.IsNullOrWhiteSpace(LabelProducto4.Text))
+        {
+            LabelProducto4.IsVisible = false;
+            LabelSubtotal4.IsVisible = false;
+        }
+        else
+        {
+            LabelProducto4.IsVisible = true;
+            LabelSubtotal4.IsVisible = true;
+        }
+
         if (string.IsNullOrWhiteSpace(LabelProducto5.Text))
         {
             LabelProducto5.IsVisible = false;
