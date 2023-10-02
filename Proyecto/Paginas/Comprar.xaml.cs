@@ -352,7 +352,11 @@ public partial class Comprar : ContentPage
         }
     }
 
-
+    /// <summary>
+    /// configuracion del boton de queso kraft
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void QuesoKraftClicked(object sender, EventArgs e)
     {
@@ -391,6 +395,11 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+    /// <summary>
+    /// configuracion del boton de queso parmesano
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void QuesoParmesanoClicked(object sender, EventArgs e)
     {
@@ -420,6 +429,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de queso fresco
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesoFrescoClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -448,6 +462,12 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de queso crema
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+
     private void QuesoCremaClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -471,6 +491,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de queso crema con loroco
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesoCremaConLorocoClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -495,6 +520,12 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de queso crema con tocino
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+
     private void QuesoCremaConTocinoClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -518,6 +549,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de queso crema con chipotle 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesoCremaConChileChipotleClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -541,6 +577,12 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de selccionar crema 95GC
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+
     private void Crema95GClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -562,6 +604,12 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+
+    /// <summary>
+    /// configuracion del boton de crema 190GC
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void Crema190GClicked(object sender, EventArgs e)
     {
@@ -585,6 +633,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton para configuracion de botella de crema
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void BotellaDeCremaClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -606,6 +659,12 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+
+    /// <summary>
+    /// configuracion del boton para configuracion de bleche 473
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void Leche473Clicked(object sender, EventArgs e)
     {
@@ -630,6 +689,11 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+    /// <summary>
+    /// configuracion del boton para configuracion de leche 750
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void Leche750Clicked(object sender, EventArgs e)
     {
@@ -655,6 +719,12 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton para configuracion de leche 900
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+
     private void Leche900Clicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -678,6 +748,12 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+
+    /// <summary>
+    /// configuracion del boton para configuracion de medio galon
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void MedioGalonClicked(object sender, EventArgs e)
     {
@@ -703,6 +779,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton para configuracion de galon
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void GalonClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -727,6 +808,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton para configuracion para agregar
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void AgregarClicked(object sender, EventArgs e)
     {
