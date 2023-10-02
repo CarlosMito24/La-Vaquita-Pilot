@@ -682,10 +682,10 @@ public partial class Comprar : ContentPage
         // Asignar la fecha actual al Label
         fecha = fechaActual.ToString("dd/MM/yyyy");
 
-        Item.total1 += Item.orden1 += Item.orden2 += Item.orden3 += Item.orden4 += Item.orden5 += Item.orden6
-              += Item.orden7 += Item.orden8 += Item.orden9 += Item.orden10 += Item.orden11 += Item.orden12
-              += Item.orden13 += Item.orden14 += Item.orden15 += Item.orden16 += Item.orden17 += Item.orden18
-              += Item.orden19 += Item.orden20 += Item.orden21;
+        Item.total1 = (Item.orden1) + (Item.orden2) + (Item.orden3) + (Item.orden4) + (Item.orden5) + (Item.orden6)
+              + (Item.orden7) + (Item.orden8) + (Item.orden9) + (Item.orden10) + (Item.orden11) + (Item.orden12)
+              + (Item.orden13) + (Item.orden14) + (Item.orden15) + (Item.orden16) + (Item.orden17) + (Item.orden18)
+              + (Item.orden19) + (Item.orden20) + (Item.orden21);
 
         string totalfinal = Item.total1.ToString("0.00");
         Item.Total = totalfinal;
