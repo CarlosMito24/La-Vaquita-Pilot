@@ -809,7 +809,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion para agregar
+    /// configuracion del boton para configuracion para agregar productos
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
