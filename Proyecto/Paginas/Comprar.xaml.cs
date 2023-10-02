@@ -7,6 +7,9 @@ namespace Proyecto.Paginas;
 
 public partial class Comprar : ContentPage
 {
+    /// <summary>
+    /// conexion a clase de variables para guardar items 
+    /// </summary>
     public Variables Item
     {
         get => BindingContext as Variables;
@@ -21,6 +24,9 @@ public partial class Comprar : ContentPage
         basededatos = data;
     }
 
+    /// <summary>
+    /// Declaracion de variables a usar 
+    /// </summary>
     private bool IsImage1 = true;
     private bool IsImage2 = true;
     private bool IsImage3 = true;
@@ -47,6 +53,11 @@ public partial class Comprar : ContentPage
     double lechemediogalon = 3.25;
     double lechegalon = 6.10;
 
+    /// <summary>
+    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void PrimeraFlechaClicked(object sender, EventArgs e)
     {
         if (IsImage1)
@@ -70,6 +81,11 @@ public partial class Comprar : ContentPage
         QuesoFresco.IsVisible = !QuesoFresco.IsVisible;
     }
 
+    /// <summary>
+    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void SegundaFlechaClicked(object sender, EventArgs e)
     {
         if (IsImage2)
@@ -88,6 +104,11 @@ public partial class Comprar : ContentPage
         QuesoCremaConChileChipotle.IsVisible = !QuesoCremaConChileChipotle.IsVisible;
     }
 
+    /// <summary>
+    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void TerceraFlechaClicked(object sender, EventArgs e)
     {
         if (IsImage3)
@@ -105,6 +126,11 @@ public partial class Comprar : ContentPage
         BotellaDeCrema.IsVisible = !BotellaDeCrema.IsVisible;
     }
 
+    /// <summary>
+    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void CuartaFlechaClicked(object sender, EventArgs e)
     {
         if (IsImage4)
@@ -124,6 +150,11 @@ public partial class Comprar : ContentPage
         LecheEnteraGalon.IsVisible = !LecheEnteraGalon.IsVisible;
     }
 
+    /// <summary>
+    /// configuracion del boton queso duro blando
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesoDuroBlandoClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -151,6 +182,12 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+
+    /// <summary>
+    /// congiguracion del boton de queso duro viejo
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void QuesoDuroViejoClicked(object sender, EventArgs e)
     {
@@ -180,6 +217,12 @@ public partial class Comprar : ContentPage
         }
     }
 
+
+    /// <summary>
+    /// configuracion del boton de queso rayado
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesoRayadoClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -208,6 +251,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de quesillo
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesilloClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -235,6 +283,12 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+
+    /// <summary>
+    /// configuracion del boton de queso Mozzarella
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
 
     private void QuesoMozzarellaClicked(object sender, EventArgs e)
     {
@@ -264,6 +318,11 @@ public partial class Comprar : ContentPage
         }
     }
 
+    /// <summary>
+    /// configuracion del boton de queso capita
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void QuesoCapitaClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -292,6 +351,8 @@ public partial class Comprar : ContentPage
             DisplayAlert("Error", "Primero indica una cantidad", "Ok");
         }
     }
+
+
 
     private void QuesoKraftClicked(object sender, EventArgs e)
     {
