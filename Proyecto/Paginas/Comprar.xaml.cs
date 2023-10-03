@@ -54,7 +54,7 @@ public partial class Comprar : ContentPage
     double lechegalon = 6.10;
 
     /// <summary>
-    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// configuacion del primer boton para que aparezcan los botones de seleccionar productos
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -82,7 +82,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// configuracion del segundo boton para que aparezcan los botones de seleccionar productos
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -105,7 +105,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// configuracion del tercer boton para que aparezcan los botones de seleccionar productos
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -127,7 +127,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuarion del boton para que aparezcan los botones de selccionar productos
+    /// configuracion del cuarto boton para que aparezcan los botones de seleccionar productos
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -151,7 +151,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton queso duro blando
+    /// configuracion del boton para elegir queso duro blando
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -184,7 +184,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// congiguracion del boton de queso duro viejo
+    /// congiguracion del boton para elegir queso duro viejo
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -219,7 +219,7 @@ public partial class Comprar : ContentPage
 
 
     /// <summary>
-    /// configuracion del boton de queso rayado
+    /// configuracion del boton para elegir queso rayado
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -252,7 +252,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de quesillo
+    /// configuracion del boton para elegir quesillo
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -285,7 +285,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso Mozzarella
+    /// configuracion del boton para elegir queso Mozzarella
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -319,7 +319,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso capita
+    /// configuracion del boton para elegir queso capita
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -353,7 +353,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso kraft
+    /// configuracion del boton para elegir queso kraft
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -396,7 +396,7 @@ public partial class Comprar : ContentPage
         }
     }
     /// <summary>
-    /// configuracion del boton de queso parmesano
+    /// configuracion del boton para elegir queso parmesano
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -430,7 +430,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso fresco
+    /// configuracion del boton para elegir queso fresco
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -463,11 +463,10 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso crema
+    /// configuracion del boton para elegir queso crema
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void QuesoCremaClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -492,7 +491,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso crema con loroco
+    /// configuracion del boton para elegir queso crema con loroco
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -521,7 +520,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso crema con tocino
+    /// configuracion del boton para elegir queso crema con tocino
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -550,7 +549,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de queso crema con chipotle 
+    /// configuracion del boton para elegir queso crema con chipotle 
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -578,7 +577,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de selccionar crema 95GC
+    /// configuracion del boton para elegir crema 95 G
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -606,11 +605,10 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton de crema 190GC
+    /// configuracion del boton para elegir crema 190 G
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void Crema190GClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -634,7 +632,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion de botella de crema
+    /// configuracion del boton para elegir botella de crema
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -661,11 +659,10 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion de bleche 473
+    /// configuracion del boton para elegir leche 473 ML
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void Leche473Clicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
@@ -690,7 +687,7 @@ public partial class Comprar : ContentPage
         }
     }
     /// <summary>
-    /// configuracion del boton para configuracion de leche 750
+    /// configuracion del boton para elegir leche 750 ML
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -720,7 +717,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion de leche 900
+    /// configuracion del boton para elegir leche 900 ML
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -750,7 +747,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion de medio galon
+    /// configuracion del boton para elegir Leche entera de medio galon
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -780,7 +777,7 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion de galon
+    /// configuracion del boton para elegir leche entera galon
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
@@ -809,17 +806,22 @@ public partial class Comprar : ContentPage
     }
 
     /// <summary>
-    /// configuracion del boton para configuracion para agregar productos
+    /// configuracion del boton para agregar productos
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void AgregarClicked(object sender, EventArgs e)
     {
         Limpiar();
         DisplayAlert("Listo", "Ahora puedes agregar mas productos a tu compra", "Continuar");
     }
 
+
+    /// <summary>
+    /// Configuración del botón que guarda la compra en la base de datos local
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     async void OnSaveClicked(object sender, EventArgs e)
     {
         string fecha;
@@ -837,7 +839,7 @@ public partial class Comprar : ContentPage
         string totalfinal = Item.total1.ToString("0.00");
         Item.Total = totalfinal;
         Item.Fecha = fecha;
-
+        
         if (string.IsNullOrWhiteSpace(Item.Nombre))
         {
             await DisplayAlert("Falta el del nombre del cliente", "Ingrese el nombre del cliente", "OK");
@@ -864,19 +866,30 @@ public partial class Comprar : ContentPage
 
         await basededatos.SaveItemAsync(Item);
         await Shell.Current.GoToAsync("..");
-        
     }
+
+    /// <summary>
+    /// Configuración del botón Cancelar o ir atrás 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     async void OnCancelClicked(object sender, EventArgs e)
     {
         await Shell.Current.GoToAsync("..");
         Borrar();
     }
 
+    /// <summary>
+    /// Se declara un método limpiar
+    /// </summary>
     public void Limpiar()
     {
         Cantidad.Text = string.Empty;
     }
 
+    /// <summary>
+    /// Se declara un método Borrar
+    /// </summary>
     public void Borrar()
     {
         Item.total1 = 0;
@@ -903,6 +916,11 @@ public partial class Comprar : ContentPage
         Item.orden21 = 0;
     }
 
+    /// <summary>
+    /// Configuración del botón Borrar
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     async void OnBorrarClicked(object sender, EventArgs e)
     {
         if (Item.ID == 0)
@@ -911,6 +929,11 @@ public partial class Comprar : ContentPage
         await Shell.Current.GoToAsync("..");
     }
 
+    /// <summary>
+    /// Configuración del botón que sirve para mostrar los detalles de la orden 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     private void MostrarDetallesClicked (object sender, EventArgs e)
     {
         if (string.IsNullOrWhiteSpace(LabelProducto1.Text))
