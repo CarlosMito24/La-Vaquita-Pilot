@@ -8,6 +8,7 @@ public partial class Productos : ContentPage
 	{
 		InitializeComponent();
 
+        //Se configura lo que se mostrará en el primer carrusel
         List<Imagenes> imagenes1 = new List<Imagenes>
     {
         new Imagenes {NombreProducto ="Queso Duro Blando", CostoProducto ="Costo Libra: $ 3,80", ImagenProducto = "quesoduroblando.png"},
@@ -21,6 +22,7 @@ public partial class Productos : ContentPage
         new Imagenes {NombreProducto ="Queso Fresco", CostoProducto="Costo Libra: $ 2,75", ImagenProducto = "quesofresco.png" },
     };
 
+        //Se configura lo que se mostrará en el segundo carrusel
         List<Imagenes> imagenes2 = new List<Imagenes>
     {
         new Imagenes {NombreProducto="Queso Crema", CostoProducto="Costo: $ 1,62", ImagenProducto="quesocrema.png"},
@@ -29,6 +31,7 @@ public partial class Productos : ContentPage
         new Imagenes {NombreProducto="Queso Crema Con Chile Chipotle", CostoProducto="Costo: $ 1,62", ImagenProducto="quesocremachilechipotle.png"},
     };
 
+        //Se configura lo que se mostrará en el tercer carrusel
         List<Imagenes> imagenes3 = new List<Imagenes>
     {
         new Imagenes {NombreProducto="Crema de 95 G - 1/8 De Botella De Crema", CostoProducto="Costo: $ 0.30", ImagenProducto="cremacentavos.png"},
@@ -36,6 +39,7 @@ public partial class Productos : ContentPage
         new Imagenes {NombreProducto="Botella De Crema", CostoProducto="Costo: $ 3,00", ImagenProducto="botelladecrema.png"},
     };
 
+        //Se configura lo que se mostrará en el cuarto carrusel
         List<Imagenes> imagenes4 = new List<Imagenes>
     {
         new Imagenes {NombreProducto="Leche Entera De 473 ML", CostoProducto="Costo: $ 0,90", ImagenProducto="leche473ml.png"},
@@ -45,6 +49,7 @@ public partial class Productos : ContentPage
         new Imagenes {NombreProducto="Leche Entera 1 Galón", CostoProducto="Costo: $ 6.10", ImagenProducto="galondeleche.png"},
     };
 
+        //Se envian los datos a cada carrusel
         CarouselView1.ItemsSource = imagenes1;
         CarouselView2.ItemsSource = imagenes2;
         CarouselView3.ItemsSource = imagenes3;

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto.Models
 {
+    /// <summary>
+    /// Clase par poder mostrar las imágenes en un carrusel
+    /// </summary>
     public class Imagenes
     {
         public string NombreProducto { get; set; }

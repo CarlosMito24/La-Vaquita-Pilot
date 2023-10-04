@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
+    /// <summary>
+    /// Clase que hace la conexión a la base de datos que guardará los datos 
+    /// </summary>
     public class Constants
     {
         public const string DatabaseFilename = "Lacteos.db3";

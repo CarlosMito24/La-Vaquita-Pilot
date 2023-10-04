@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Proyecto.Models
 {
+    /// <summary>
+    /// Clase que declara todad las varibales que usaremos y que deseamos guardar en nuestra tabla de la base de datos
+    /// </summary>
     public class Variables
     {
         [PrimaryKey, AutoIncrement]
