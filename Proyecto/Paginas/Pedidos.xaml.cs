@@ -7,7 +7,7 @@ namespace Proyecto.Paginas;
 public partial class Pedidos : ContentPage
 {
     /// <summary>
-    /// Variable que se conectrá a la clase Data
+    /// Variable que se conectará a la clase Data
     /// </summary>
     Data basededatos;
 
