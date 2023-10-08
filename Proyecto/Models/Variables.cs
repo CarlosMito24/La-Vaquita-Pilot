@@ -62,27 +62,27 @@ namespace Proyecto.Models
         public string SubTotalProducto20 { get; set; }
         public string DetallesProducto21 { get; set; }
         public string SubTotalProducto21 { get; set; }
-        public double orden1 { get; set; }
-        public double orden2 { get; set; } 
-        public double orden3 { get; set; }
-        public double orden4 { get; set; }
-        public double orden5 { get; set; }
-        public double orden6 { get; set; }
-        public double orden7 { get; set; }
-        public double orden8 { get; set; }
-        public double orden9 { get; set; }
-        public double orden10 { get; set; }
-        public double orden11 { get; set; }
-        public double orden12 { get; set; }
-        public double orden13 { get; set; }
-        public double orden14 { get; set; }
-        public double orden15 { get; set; }
-        public double orden16 { get; set; }
-        public double orden17 { get; set; }
-        public double orden18 { get; set; }
-        public double orden19 { get; set; }
-        public double orden20 { get; set; }
-        public double orden21 { get; set;}
-        public double total1 { get; set; }
+        public double Orden1 { get; set; } = 0;
+        public double Orden2 { get; set; } = 0;
+        public double Orden3 { get; set; } = 0;
+        public double Orden4 { get; set; } = 0;
+        public double Orden5 { get; set; } = 0;
+        public double Orden6 { get; set; } = 0;
+        public double Orden7 { get; set; } = 0;
+        public double Orden8 { get; set; } = 0;
+        public double Orden9 { get; set; } = 0;
+        public double Orden10 { get; set; } = 0;
+        public double Orden11 { get; set; } = 0;
+        public double Orden12 { get; set; } = 0;
+        public double Orden13 { get; set; } = 0;
+        public double Orden14 { get; set; } = 0;
+        public double Orden15 { get; set; } = 0;
+        public double Orden16 { get; set; } = 0;
+        public double Orden17 { get; set; } = 0;
+        public double Orden18 { get; set; } = 0;
+        public double Orden19 { get; set; } = 0;
+        public double Orden20 { get; set; } = 0;
+        public double Orden21 { get; set;} = 0;
+        public double Total1 { get; set; }
     }
 }

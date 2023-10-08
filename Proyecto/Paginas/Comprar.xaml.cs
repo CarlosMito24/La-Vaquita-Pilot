@@ -159,7 +159,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden1 = cantidad * quesoduroblando;
+            Item.Orden1 = cantidad * quesoduroblando;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -174,7 +174,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Duro Blando", "Ok");
             Item.DetallesProducto1 = cantidad + " Libras de Queso Duro Blando";
-            string subtotal1 = Item.orden1.ToString("0.00");
+            string subtotal1 = Item.Orden1.ToString("0.00");
             Item.SubTotalProducto1 = "$ " + subtotal1;
         }
         else
@@ -193,7 +193,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden2 = cantidad * quesoduroviejo;
+            Item.Orden2 = cantidad * quesoduroviejo;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -208,7 +208,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Duro Viejo", "Ok");
             Item.DetallesProducto2 = cantidad + " Libras de Queso Duro Viejo";
-            string subtotal2 = Item.orden2.ToString("0.00");
+            string subtotal2 = Item.Orden2.ToString("0.00");
             Item.SubTotalProducto2 = "$ " + subtotal2;
         }
         else
@@ -227,7 +227,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden3 = cantidad * quesorayado;
+            Item.Orden3 = cantidad * quesorayado;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -242,7 +242,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Rayado", "Ok");
             Item.DetallesProducto3 = cantidad + " Libras de Queso Rayado";
-            string subtotal3 = Item.orden3.ToString("0.00");
+            string subtotal3 = Item.Orden3.ToString("0.00");
             Item.SubTotalProducto3 = "$ " + subtotal3;
         }
         else
@@ -260,7 +260,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden4 = cantidad * quesillo;
+            Item.Orden4 = cantidad * quesillo;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -275,7 +275,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Quesillo", "Ok");
             Item.DetallesProducto4 = cantidad + " Libras de Quesillo";
-            string subtotal4 = Item.orden4.ToString("0.00");
+            string subtotal4 = Item.Orden4.ToString("0.00");
             Item.SubTotalProducto4 = "$ " + subtotal4;
         }
         else
@@ -294,7 +294,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden5 = cantidad * quesomozzarella;
+            Item.Orden5 = cantidad * quesomozzarella;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -309,7 +309,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Mozzarella", "Ok");
             Item.DetallesProducto5 = cantidad + " Libras de Queso Mozarella";
-            string subtotal5 = Item.orden5.ToString("0.00");
+            string subtotal5 = Item.Orden5.ToString("0.00");
             Item.SubTotalProducto5 = "$ " + subtotal5;
         }
         else
@@ -327,7 +327,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden6 = cantidad * quesocapita;
+            Item.Orden6 = cantidad * quesocapita;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -342,7 +342,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Capita", "Ok");
             Item.DetallesProducto6 = cantidad + " Libras de Queso Capita";
-            string subtotal6 = Item.orden6.ToString("0.00");
+            string subtotal6 = Item.Orden6.ToString("0.00");
             Item.SubTotalProducto6 = "$ " + subtotal6;
 
         }
@@ -357,12 +357,11 @@ public partial class Comprar : ContentPage
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void QuesoKraftClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden7 = cantidad * quesokraft;
+            Item.Orden7 = cantidad * quesokraft;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -377,18 +376,8 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Kraft", "Ok");
             Item.DetallesProducto7 = cantidad + " Libras de Queso Kraft";
-            string subtotal7 = Item.orden7.ToString("0.00");
+            string subtotal7 = Item.Orden7.ToString("0.00");
             Item.SubTotalProducto7 = "$ " + subtotal7;
-            if (Item.orden7 > 0)
-            {
-                LabelProducto7.IsVisible = true;
-                LabelSubtotal7.IsVisible = true;
-            }
-            else
-            {
-                LabelProducto7.IsVisible = false;
-                LabelSubtotal7.IsVisible = false;
-            }
         }
         else
         {
@@ -405,7 +394,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden8 = cantidad * quesoparmesano;
+            Item.Orden8 = cantidad * quesoparmesano;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -420,7 +409,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Parmesano", "Ok");
             Item.DetallesProducto8 = cantidad + " Libras de Queso Parmesano";
-            string subtotal8 = Item.orden8.ToString("0.00");
+            string subtotal8 = Item.Orden8.ToString("0.00");
             Item.SubTotalProducto8 = "$ " + subtotal8;
         }
         else
@@ -438,7 +427,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden9 = cantidad * quesofresco;
+            Item.Orden9 = cantidad * quesofresco;
 
             QuesoDuroBlando.IsVisible = false;
             QuesoDuroViejo.IsVisible = false;
@@ -453,7 +442,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Libras de Queso Fresco", "Ok");
             Item.DetallesProducto9 = cantidad + " Libras de Queso Fresco";
-            string subtotal9 = Item.orden9.ToString("0.00");
+            string subtotal9 = Item.Orden9.ToString("0.00");
             Item.SubTotalProducto9 = "$ " + subtotal9;
         }
         else
@@ -471,7 +460,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden10 = cantidad * quesocrema;
+            Item.Orden10 = cantidad * quesocrema;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -481,7 +470,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema", "Ok");
             Item.DetallesProducto10 = cantidad + " Unidades de Queso Crema";
-            string subtotal10 = Item.orden10.ToString("0.00");
+            string subtotal10 = Item.Orden10.ToString("0.00");
             Item.SubTotalProducto10 = "$ " + subtotal10;
         }
         else
@@ -499,7 +488,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden11 = cantidad * quesocremaconloroco;
+            Item.Orden11 = cantidad * quesocremaconloroco;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -510,7 +499,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Loroco", "Ok");
             Item.DetallesProducto11 = cantidad + " Unidades de Queso Crema Con Loroco";
-            string subtotal11 = Item.orden10.ToString("0.00");
+            string subtotal11 = Item.Orden11.ToString("0.00");
             Item.SubTotalProducto11 = "$ " + subtotal11;
         }
         else
@@ -529,7 +518,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden12 = cantidad * quesocremacontocino;
+            Item.Orden12 = cantidad * quesocremacontocino;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -539,7 +528,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Tocino", "Ok");
             Item.DetallesProducto12 = cantidad + " Unidades de Queso Crema Con Tocino";
-            string subtotal12 = Item.orden12.ToString("0.00");
+            string subtotal12 = Item.Orden12.ToString("0.00");
             Item.SubTotalProducto12 = "$ " + subtotal12;
         }
         else
@@ -557,7 +546,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden13 = cantidad * quesocremachilechipotle;
+            Item.Orden13 = cantidad * quesocremachilechipotle;
 
             QuesoCrema.IsVisible = false;
             QuesoCremaLoroco.IsVisible = false;
@@ -567,7 +556,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Queso Crema Con Chile Chipotle", "Ok");
             Item.DetallesProducto13 = cantidad + " Unidades de Queso Crema Con Chile Chipotle";
-            string subtotal13 = Item.orden13.ToString("0.00");
+            string subtotal13 = Item.Orden13.ToString("0.00");
             Item.SubTotalProducto13 = "$ " + subtotal13;
         }
         else
@@ -581,12 +570,11 @@ public partial class Comprar : ContentPage
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void Crema95GClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden14 = cantidad * crema95g;
+            Item.Orden14 = cantidad * crema95g;
 
             Crema95G.IsVisible = false;
             Crema190G.IsVisible = false;
@@ -595,7 +583,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 95G", "Ok");
             Item.DetallesProducto14 = cantidad + " Unidades de Crema de 95G";
-            string subtotal14 = Item.orden14.ToString("0.00");
+            string subtotal14 = Item.Orden14.ToString("0.00");
             Item.SubTotalProducto14 = "$ " + subtotal14;
         }
         else
@@ -613,7 +601,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden15 = cantidad * crema190g;
+            Item.Orden15 = cantidad * crema190g;
 
             Crema95G.IsVisible = false;
             Crema190G.IsVisible = false;
@@ -622,7 +610,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Crema de 190G", "Ok");
             Item.DetallesProducto15 = cantidad + " Unidades de Crema de 190G";
-            string subtotal15 = Item.orden15.ToString("0.00");
+            string subtotal15 = Item.Orden15.ToString("0.00");
             Item.SubTotalProducto15 = "$ " + subtotal15;
         }
         else
@@ -640,7 +628,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden16 = cantidad * botelladecrema;
+            Item.Orden16 = cantidad * botelladecrema;
 
             Crema95G.IsVisible = false;
             Crema190G.IsVisible = false;
@@ -649,7 +637,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Botellla de crema", "Ok");
             Item.DetallesProducto16 = cantidad + " Unidades de Botellla de crema";
-            string subtotal16 = Item.orden16.ToString("0.00");
+            string subtotal16 = Item.Orden16.ToString("0.00");
             Item.SubTotalProducto16 = "$ " + subtotal16;
         }
         else
@@ -667,7 +655,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden17 = cantidad * leche473ml;
+            Item.Orden17 = cantidad * leche473ml;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -678,7 +666,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 473ML", "Ok");
             Item.DetallesProducto17 = cantidad + " Unidades de Leche Entera de 473ML";
-            string subtotal17 = Item.orden17.ToString("0.00");
+            string subtotal17 = Item.Orden17.ToString("0.00");
             Item.SubTotalProducto17 = "$ " + subtotal17;
         }
         else
@@ -696,7 +684,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden18 = cantidad * leche750ml;
+            Item.Orden18 = cantidad * leche750ml;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -707,7 +695,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 750ML", "Ok");
             Item.DetallesProducto18 = cantidad + " Unidades de Leche Entera de 750ML";
-            string subtotal18 = Item.orden18.ToString("0.00");
+            string subtotal18 = Item.Orden18.ToString("0.00");
             Item.SubTotalProducto18 = "$ " + subtotal18;
         }
         else
@@ -721,12 +709,11 @@ public partial class Comprar : ContentPage
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void Leche900Clicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden19 = cantidad * leche900ml;
+            Item.Orden19 = cantidad * leche900ml;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -737,7 +724,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera de 900ML", "Ok");
             Item.DetallesProducto19 = cantidad + " Unidades de Leche Entera de 900ML";
-            string subtotal19 = Item.orden19.ToString("0.00");
+            string subtotal19 = Item.Orden19.ToString("0.00");
             Item.SubTotalProducto19 = "$ " + subtotal19;
         }
         else
@@ -751,12 +738,11 @@ public partial class Comprar : ContentPage
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-
     private void MedioGalonClicked(object sender, EventArgs e)
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden20 = cantidad * lechemediogalon;
+            Item.Orden20 = cantidad * lechemediogalon;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -767,7 +753,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Medio Galón", "Ok");
             Item.DetallesProducto20 = cantidad + " Unidades de Leche Entera Medio Galón";
-            string subtotal20 = Item.orden20.ToString("0.00");
+            string subtotal20 = Item.Orden20.ToString("0.00");
             Item.SubTotalProducto20 = "$ " + subtotal20;
         }
         else
@@ -785,7 +771,7 @@ public partial class Comprar : ContentPage
     {
         if (double.TryParse(Cantidad.Text, out double cantidad) && !string.IsNullOrEmpty(Cantidad.Text))
         {
-            Item.orden21 = cantidad * lechegalon;
+            Item.Orden21 = cantidad * lechegalon;
 
             LecheEntera473ML.IsVisible = false;
             LecheEntera750ML.IsVisible = false;
@@ -796,7 +782,7 @@ public partial class Comprar : ContentPage
 
             DisplayAlert("Producto Agregado", "Se Agregó " + cantidad + " Unidades de Leche Entera Galón", "Ok");
             Item.DetallesProducto21 = cantidad + " Unidades de de Leche Entera Galón";
-            string subtotal21 = Item.orden21.ToString("0.00");
+            string subtotal21 = Item.Orden21.ToString("0.00");
             Item.SubTotalProducto21 = "$ " + subtotal21;
         }
         else
@@ -831,12 +817,12 @@ public partial class Comprar : ContentPage
         // Asignar la fecha actual al Label
         fecha = fechaActual.ToString("dd/MM/yyyy");
 
-        Item.total1 = (Item.orden1) + (Item.orden2) + (Item.orden3) + (Item.orden4) + (Item.orden5) + (Item.orden6)
-              + (Item.orden7) + (Item.orden8) + (Item.orden9) + (Item.orden10) + (Item.orden11) + (Item.orden12)
-              + (Item.orden13) + (Item.orden14) + (Item.orden15) + (Item.orden16) + (Item.orden17) + (Item.orden18)
-              + (Item.orden19) + (Item.orden20) + (Item.orden21);
+        Item.Total1 = (Item.Orden1) + (Item.Orden2) + (Item.Orden3) + (Item.Orden4) + (Item.Orden5) + (Item.Orden6)
+              + (Item.Orden7) + (Item.Orden8) + (Item.Orden9) + (Item.Orden10) + (Item.Orden11) + (Item.Orden12)
+              + (Item.Orden13) + (Item.Orden14) + (Item.Orden15) + (Item.Orden16) + (Item.Orden17) + (Item.Orden18)
+              + (Item.Orden19) + (Item.Orden20) + (Item.Orden21);
 
-        string totalfinal = Item.total1.ToString("0.00");
+        string totalfinal = Item.Total1.ToString("0.00");
         Item.Total = totalfinal;
         Item.Fecha = fecha;
         
@@ -858,7 +844,7 @@ public partial class Comprar : ContentPage
             return;
         }
 
-        if (Item.total1 == 0)
+        if (Item.Total1 == 0)
         {
             await DisplayAlert("Advertencia", "No ha ingresado ningún producto, primero ingrese al menos un producto para poder guardar su pedido", "Continuar");
             return;
@@ -892,28 +878,28 @@ public partial class Comprar : ContentPage
     /// </summary>
     public void Borrar()
     {
-        Item.total1 = 0;
-        Item.orden1 = 0;
-        Item.orden2 = 0;
-        Item.orden3 = 0;
-        Item.orden4 = 0;
-        Item.orden5 = 0;
-        Item.orden6 = 0;
-        Item.orden7 = 0;
-        Item.orden8 = 0;
-        Item.orden9 = 0;
-        Item.orden10 = 0;
-        Item.orden11 = 0;
-        Item.orden12 = 0;
-        Item.orden13 = 0;
-        Item.orden14 = 0;
-        Item.orden15 = 0;
-        Item.orden16 = 0;
-        Item.orden17 = 0;
-        Item.orden18 = 0;
-        Item.orden19 = 0;
-        Item.orden20 = 0;
-        Item.orden21 = 0;
+        Item.Total1 = 0;
+        Item.Orden1 = 0;
+        Item.Orden2 = 0;
+        Item.Orden3 = 0;
+        Item.Orden4 = 0;
+        Item.Orden5 = 0;
+        Item.Orden6 = 0;
+        Item.Orden7 = 0;
+        Item.Orden8 = 0;
+        Item.Orden9 = 0;
+        Item.Orden10 = 0;
+        Item.Orden11 = 0;
+        Item.Orden12 = 0;
+        Item.Orden13 = 0;
+        Item.Orden14 = 0;
+        Item.Orden15 = 0;
+        Item.Orden16 = 0;
+        Item.Orden17 = 0;
+        Item.Orden18 = 0;
+        Item.Orden19 = 0;
+        Item.Orden20 = 0;
+        Item.Orden21 = 0;
     }
 
     /// <summary>
@@ -936,239 +922,575 @@ public partial class Comprar : ContentPage
     /// <param name="e"></param>
     private void MostrarDetallesClicked (object sender, EventArgs e)
     {
-        if (string.IsNullOrWhiteSpace(LabelProducto1.Text))
+        if (Item.Orden1 == 0)
         {
             LabelProducto1.IsVisible = false;
             LabelSubtotal1.IsVisible = false;
+            QuitarProducto1.IsVisible = false;
         }
         else
         {
             LabelProducto1.IsVisible = true;
             LabelSubtotal1.IsVisible = true;
+            QuitarProducto1.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto2.Text))
+        if (Item.Orden2 == 0)
         {
             LabelProducto2.IsVisible = false;
             LabelSubtotal2.IsVisible = false;
+            QuitarProducto2.IsVisible = false;
         }
         else
         {
             LabelProducto2.IsVisible = true;
             LabelSubtotal2.IsVisible = true;
+            QuitarProducto2.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto3.Text))
+        if (Item.Orden3 == 0)
         {
             LabelProducto3.IsVisible = false;
             LabelSubtotal3.IsVisible = false;
+            QuitarProducto3.IsVisible = false;
         }
         else
         {
             LabelProducto3.IsVisible = true;
             LabelSubtotal3.IsVisible = true;
+            QuitarProducto3.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto4.Text))
+        if (Item.Orden4 == 0)
         {
             LabelProducto4.IsVisible = false;
             LabelSubtotal4.IsVisible = false;
+            QuitarProducto4.IsVisible = false;
         }
         else
         {
             LabelProducto4.IsVisible = true;
             LabelSubtotal4.IsVisible = true;
+            QuitarProducto4.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto5.Text))
+        if (Item.Orden5 == 0)
         {
             LabelProducto5.IsVisible = false;
             LabelSubtotal5.IsVisible = false;
+            QuitarProducto5.IsVisible = false;
         }
         else
         {
             LabelProducto5.IsVisible = true;
             LabelSubtotal5.IsVisible = true;
+            QuitarProducto5.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto6.Text))
+        if (Item.Orden6 == 0)
         {
             LabelProducto6.IsVisible = false;
             LabelSubtotal6.IsVisible = false;
+            QuitarProducto6.IsVisible = false;
         }
         else
         {
             LabelProducto6.IsVisible = true;
             LabelSubtotal6.IsVisible = true;
+            QuitarProducto6.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto7.Text))
+        if (Item.Orden7 == 0)
         {
             LabelProducto7.IsVisible = false;
             LabelSubtotal7.IsVisible = false;
+            QuitarProducto7.IsVisible = false;
         }
         else
         {
             LabelProducto7.IsVisible = true;
             LabelSubtotal7.IsVisible = true;
+            QuitarProducto7.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto8.Text))
+        if (Item.Orden8 == 0)
         {
             LabelProducto8.IsVisible = false;
             LabelSubtotal8.IsVisible = false;
+            QuitarProducto8.IsVisible = false;
         }
         else
         {
             LabelProducto8.IsVisible = true;
             LabelSubtotal8.IsVisible = true;
+            QuitarProducto8.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto9.Text))
+        if (Item.Orden9 == 0)
         {
             LabelProducto9.IsVisible = false;
             LabelSubtotal9.IsVisible = false;
+            QuitarProducto9.IsVisible = false;
         }
         else
         {
             LabelProducto9.IsVisible = true;
             LabelSubtotal9.IsVisible = true;
+            QuitarProducto9.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto10.Text))
+        if (Item.Orden10 == 0)
         {
             LabelProducto10.IsVisible = false;
             LabelSubtotal10.IsVisible = false;
+            QuitarProducto10.IsVisible = false;
         }
         else
         {
             LabelProducto10.IsVisible = true;
             LabelSubtotal10.IsVisible = true;
+            QuitarProducto10.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto11.Text))
+        if (Item.Orden11 == 0)
         {
             LabelProducto11.IsVisible = false;
             LabelSubtotal11.IsVisible = false;
+            QuitarProducto11.IsVisible = false;
         }
         else
         {
             LabelProducto11.IsVisible = true;
             LabelSubtotal11.IsVisible = true;
+            QuitarProducto11.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto12.Text))
+        if (Item.Orden12 == 0)
         {
             LabelProducto12.IsVisible = false;
             LabelSubtotal12.IsVisible = false;
+            QuitarProducto12.IsVisible = false;
         }
         else
         {
             LabelProducto12.IsVisible = true;
             LabelSubtotal12.IsVisible = true;
+            QuitarProducto12.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto13.Text))
+        if (Item.Orden13 == 0)
         {
             LabelProducto13.IsVisible = false;
             LabelSubtotal13.IsVisible = false;
+            QuitarProducto13.IsVisible = false;
         }
         else
         {
             LabelProducto13.IsVisible = true;
             LabelSubtotal13.IsVisible = true;
+            QuitarProducto13.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto14.Text))
+        if (Item.Orden14 == 0)
         {
             LabelProducto14.IsVisible = false;
             LabelSubtotal14.IsVisible = false;
+            QuitarProducto14.IsVisible = false;
         }
         else
         {
             LabelProducto14.IsVisible = true;
             LabelSubtotal14.IsVisible = true;
+            QuitarProducto14.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto15.Text))
+        if (Item.Orden15 == 0)
         {
             LabelProducto15.IsVisible = false;
             LabelSubtotal15.IsVisible = false;
+            QuitarProducto15.IsVisible = false;
         }
         else
         {
             LabelProducto15.IsVisible = true;
             LabelSubtotal15.IsVisible = true;
+            QuitarProducto15.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto16.Text))
+        if (Item.Orden16 == 0)
         {
             LabelProducto16.IsVisible = false;
             LabelSubtotal16.IsVisible = false;
+            QuitarProducto16.IsVisible = false;
         }
         else
         {
             LabelProducto16.IsVisible = true;
             LabelSubtotal16.IsVisible = true;
+            QuitarProducto16.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto17.Text))
+        if (Item.Orden17 == 0)
         {
             LabelProducto17.IsVisible = false;
             LabelSubtotal17.IsVisible = false;
+            QuitarProducto17.IsVisible = false;
         }
         else
         {
             LabelProducto17.IsVisible = true;
             LabelSubtotal17.IsVisible = true;
+            QuitarProducto17.IsVisible= true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto18.Text))
+        if (Item.Orden18 == 0)
         {
             LabelProducto18.IsVisible = false;
             LabelSubtotal18.IsVisible = false;
+            QuitarProducto18.IsVisible = false;
         }
         else
         {
             LabelProducto18.IsVisible = true;
             LabelSubtotal18.IsVisible = true;
+            QuitarProducto18.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto19.Text))
+        if (Item.Orden19 == 0)
         {
             LabelProducto19.IsVisible = false;
             LabelSubtotal19.IsVisible = false;
+            QuitarProducto19.IsVisible = false;
         }
         else
         {
             LabelProducto19.IsVisible = true;
             LabelSubtotal19.IsVisible = true;
+            QuitarProducto19.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto20.Text))
+        if (Item.Orden20 == 0)
         {
             LabelProducto20.IsVisible = false;
             LabelSubtotal20.IsVisible = false;
+            QuitarProducto20.IsVisible = false;
         }
         else
         {
             LabelProducto20.IsVisible = true;
             LabelSubtotal20.IsVisible = true;
+            QuitarProducto20.IsVisible = true;
         }
 
-        if (string.IsNullOrWhiteSpace(LabelProducto21.Text))
+        if (Item.Orden21 == 0)
         {
             LabelProducto21.IsVisible = false;
             LabelSubtotal21.IsVisible = false;
+            QuitarProducto21.IsVisible = false;
         }
         else
         {
             LabelProducto21.IsVisible = true;
             LabelSubtotal21.IsVisible = true;
+            QuitarProducto21.IsVisible = true;
         }
 
         LabelMostrarTotalDetalles.Text = "$ " + Item.Total;
         LabelMostrarTotalDetalles.IsVisible = true;
         LabelTotalDetalles.IsVisible = true;
+    }
+
+    /// <summary>
+    /// Elimina el producto 1 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto1Clicked (object sender, EventArgs e)
+    {
+        LabelProducto1.IsVisible = false;
+        LabelSubtotal1.IsVisible = false;
+        QuitarProducto1.IsVisible = false;
+        Item.Orden1 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 2 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto2Clicked (Object sender, EventArgs e)
+    {
+        LabelProducto2.IsVisible = false;
+        LabelSubtotal2.IsVisible = false;
+        QuitarProducto2.IsVisible = false;
+        Item.Orden2 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 3 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto3Clicked(Object sender, EventArgs e)
+    {
+        LabelProducto3.IsVisible = false;
+        LabelSubtotal3.IsVisible = false;
+        QuitarProducto3.IsVisible = false;
+        Item.Orden3 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 4 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto4Clicked(Object sender, EventArgs e)
+    {
+        LabelProducto4.IsVisible = false;
+        LabelSubtotal4.IsVisible = false;
+        QuitarProducto4.IsVisible = false;
+        Item.Orden4 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 5 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto5Clicked(Object sender, EventArgs e)
+    {
+        LabelProducto5.IsVisible = false;
+        LabelSubtotal5.IsVisible = false;
+        QuitarProducto5.IsVisible = false;
+        Item.Orden5 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 6 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto6Clicked(Object sender, EventArgs e)
+    {
+        LabelProducto6.IsVisible = false;
+        LabelSubtotal6.IsVisible = false;
+        QuitarProducto6.IsVisible = false;
+        Item.Orden6 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 7 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto7Clicked(object sender, EventArgs e)
+    {
+        LabelProducto7.IsVisible = false;
+        LabelSubtotal7.IsVisible = false;
+        QuitarProducto7.IsVisible = false;
+        Item.Orden7 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 8 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto8Clicked(object sender, EventArgs e)
+    {
+        LabelProducto8.IsVisible = false;
+        LabelSubtotal8.IsVisible = false;
+        QuitarProducto8.IsVisible = false;
+        Item.Orden8 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 9 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto9Clicked (object sender, EventArgs e)
+    {
+        LabelProducto9.IsVisible = false;
+        LabelSubtotal9.IsVisible = false;
+        QuitarProducto9.IsVisible = false;
+        Item.Orden9 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 10 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto10Clicked(object sender, EventArgs e)
+    {
+        LabelProducto10.IsVisible = false;
+        LabelSubtotal10.IsVisible = false;
+        QuitarProducto10.IsVisible = false;
+        Item.Orden10 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 11 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto11Clicked(object sender, EventArgs e)
+    {
+        LabelProducto11.IsVisible = false;
+        LabelSubtotal11.IsVisible = false;
+        QuitarProducto11.IsVisible = false;
+        Item.Orden11 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 12 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto12Clicked(object sender, EventArgs e)
+    {
+        LabelProducto12.IsVisible = false;
+        LabelSubtotal12.IsVisible = false;
+        QuitarProducto12.IsVisible = false;
+        Item.Orden12 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 13 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto13Clicked(object sender, EventArgs e)
+    {
+        LabelProducto13.IsVisible = false;
+        LabelSubtotal13.IsVisible = false;
+        QuitarProducto13.IsVisible = false;
+        Item.Orden13 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 14 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto14Clicked(object sender, EventArgs e)
+    {
+        LabelProducto14.IsVisible = false;
+        LabelSubtotal14.IsVisible = false;
+        QuitarProducto14.IsVisible = false;
+        Item.Orden14 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 15 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto15Clicked(object sender, EventArgs e)
+    {
+        LabelProducto15.IsVisible = false;
+        LabelSubtotal15.IsVisible = false;
+        QuitarProducto15.IsVisible = false;
+        Item.Orden15 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 16 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto16Clicked(object sender, EventArgs e)
+    {
+        LabelProducto16.IsVisible = false;
+        LabelSubtotal16.IsVisible = false;
+        QuitarProducto16.IsVisible = false;
+        Item.Orden16 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 17 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto17Clicked(object sender, EventArgs e)
+    {
+        LabelProducto17.IsVisible = false;
+        LabelSubtotal17.IsVisible = false;
+        QuitarProducto17.IsVisible = false;
+        Item.Orden17 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 18 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto18Clicked(object sender, EventArgs e)
+    {
+        LabelProducto18.IsVisible = false;
+        LabelSubtotal18.IsVisible = false;
+        QuitarProducto18.IsVisible = false;
+        Item.Orden18 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 19 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto19Clicked(object sender, EventArgs e)
+    {
+        LabelProducto19.IsVisible = false;
+        LabelSubtotal19.IsVisible = false;
+        QuitarProducto19.IsVisible = false;
+        Item.Orden19 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 20 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto20Clicked(object sender, EventArgs e)
+    {
+        LabelProducto20.IsVisible = false;
+        LabelSubtotal20.IsVisible = false;
+        QuitarProducto20.IsVisible = false;
+        Item.Orden20 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
+    }
+
+    /// <summary>
+    /// Elimina el producto 21 de la orden
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    private void QuitarProducto21Clicked(object sender, EventArgs e)
+    {
+        LabelProducto21.IsVisible = false;
+        LabelSubtotal21.IsVisible = false;
+        QuitarProducto21.IsVisible = false;
+        Item.Orden21 = 0;
+        DisplayAlert("Producto eliminado", "Se eliminó el producto", "Continuar");
     }
 }
